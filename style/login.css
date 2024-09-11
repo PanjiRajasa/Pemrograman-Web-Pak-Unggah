@@ -1,0 +1,131 @@
+/* Mengatur font untuk seluruh body menggunakan Arial, Helvetica, atau sans-serif */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Mengatur input teks dan password agar memiliki lebar penuh */
+  input[type=text], input[type=password] {
+    width: 100%; /* Lebar penuh */
+    padding: 12px 20px; /* Padding di dalam input */
+    margin: 8px 0; /* Jarak vertikal */
+    display: inline-block; /* Ditampilkan sebagai elemen inline-block */
+    border: 1px solid #ccc; /* Batas tipis di sekitar input */
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam total lebar dan tinggi */
+  }
+  
+  /* Mengatur style untuk semua tombol */
+  button {
+    background-color: #04AA6D; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    padding: 14px 20px; /* Padding di dalam tombol */
+    margin: 8px 0; /* Jarak vertikal di luar tombol */
+    border: none; /* Tanpa border */
+    cursor: pointer; /* Kursor berubah menjadi pointer saat diarahkan */
+    width: 100%; /* Tombol memiliki lebar penuh */
+  }
+  
+  /* Efek hover pada tombol (sedikit transparan) */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Style ekstra untuk tombol batal (cancel button) */
+  .cancelbtn {
+    width: auto; /* Lebar otomatis */
+    padding: 10px 18px; /* Padding lebih kecil dari tombol utama */
+    background-color: #f44336; /* Warna latar belakang merah */
+  }
+  
+  /* Pusatkan gambar dan posisikan tombol close (x) */
+  .imgcontainer {
+    text-align: center; /* Gambar berada di tengah */
+    margin: 24px 0 12px 0; /* Jarak vertikal di atas dan bawah */
+    position: relative; /* Untuk memposisikan elemen anak secara absolut */
+  }
+  
+  /* Atur ukuran gambar avatar dan buat menjadi berbentuk lingkaran */
+  img.avatar {
+    width: 40%; /* Lebar 40% dari kontainer */
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  }
+  
+  /* Padding di dalam kontainer */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Style untuk elemen span yang mengandung password yang dilupakan */
+  span.psw {
+    float: right; /* Teks berada di sebelah kanan */
+    padding-top: 16px; /* Jarak di atas teks */
+  }
+  
+  /* Style untuk modal (latar belakang) */
+  .modal {
+    display: none; /* Modal tersembunyi secara default */
+    position: fixed; /* Tetap di tempat, bahkan saat halaman di-scroll */
+    z-index: 1; /* Modal berada di atas elemen lain */
+    left: 0; /* Posisikan di paling kiri */
+    top: 0; /* Posisikan di paling atas */
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    overflow: auto; /* Aktifkan scroll jika diperlukan */
+    background-color: rgb(0,0,0); /* Warna fallback hitam */
+    background-color: rgba(0,0,0,0.4); /* Latar belakang hitam semi transparan */
+    padding-top: 60px; /* Jarak dari atas halaman */
+  }
+  
+  /* Konten/Box dalam modal */
+  .modal-content {
+    background-color: #fefefe; /* Latar belakang putih */
+    margin: 5% auto 15% auto; /* Marginal secara otomatis, dengan jarak 5% dari atas dan 15% dari bawah */
+    border: 1px solid #888; /* Border abu-abu */
+    width: 80%; /* Lebar 80% dari layar */
+  }
+  
+  /* Tombol close (x) untuk menutup modal */
+  .close {
+    position: absolute; /* Diposisikan secara absolut di dalam modal */
+    right: 25px; /* 25px dari kanan */
+    top: 0; /* Di bagian atas */
+    color: #000; /* Warna hitam */
+    font-size: 35px; /* Ukuran font besar */
+    font-weight: bold; /* Font tebal */
+  }
+  
+  /* Efek hover dan fokus pada tombol close */
+  .close:hover,
+  .close:focus {
+    color: red; /* Ubah warna menjadi merah */
+    cursor: pointer; /* Ubah kursor menjadi pointer */
+  }
+  
+  /* Menambahkan animasi zoom ke modal */
+  .animate {
+    -webkit-animation: animatezoom 0.6s; /* Animasi zoom di browser berbasis Webkit */
+    animation: animatezoom 0.6s; /* Animasi zoom di browser lain */
+  }
+  
+  /* Animasi zoom dari kecil ke besar (untuk browser Webkit) */
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} /* Mulai dari ukuran 0 (kecil) */
+    to {-webkit-transform: scale(1)} /* Berakhir pada ukuran penuh */
+  }
+  
+  /* Animasi zoom dari kecil ke besar */
+  @keyframes animatezoom {
+    from {transform: scale(0)} /* Mulai dari ukuran 0 (kecil) */
+    to {transform: scale(1)} /* Berakhir pada ukuran penuh */
+  }
+  
+  /* Ubah style untuk span dan tombol cancel pada layar kecil (max-width 300px) */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block; /* Tampilkan sebagai blok */
+       float: none; /* Hilangkan floating */
+    }
+    .cancelbtn {
+       width: 100%; /* Tombol batal memiliki lebar penuh */
+    }
+  }
+  
