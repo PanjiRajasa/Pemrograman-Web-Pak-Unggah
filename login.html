@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Menentukan tipe dokumen HTML5 -->
+    <meta charset="UTF-8" />
+    <!-- Menyediakan metadata agar halaman responsive di perangkat seluler -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Judul halaman web yang akan tampil di tab browser -->
+    <title>Kotlin Group Web</title>
+    <!-- Menyertakan file CSS eksternal untuk styling halaman -->
+    <link rel="stylesheet" href="style/login.css" />
+    <!-- Menambahkan ikon untuk tab browser -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="image/Foto Bok-Su game Married In Red.jpg"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <!-- Tombol untuk membuka modal dengan mengatur display modal menjadi 'block' -->
+        <button onclick="document.getElementById('id01').style.display='block'">
+          Login
+        </button>
+
+        <!-- Elemen modal yang akan ditampilkan saat tombol di klik -->
+        <div id="id01" class="modal">
+          <!-- Tombol 'close' untuk menutup modal dengan mengatur display modal menjadi 'none' -->
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+
+          <!-- Konten modal: Form login -->
+          <form class="modal-content animate" action="project1.html">
+            <!-- Container untuk gambar avatar -->
+            <div class="imgcontainer">
+              <!-- Gambar avatar dalam modal -->
+              <img
+                src="image/Foto Bok-Su game Married In Red.jpg"
+                alt="Avatar"
+                class="avatar"
+              />
+            </div>
+
+            <!-- Container untuk input username dan password -->
+            <div class="container">
+              <!-- Label untuk username -->
+              <label for="uname"><b>Username</b></label>
+              <!-- Input teks untuk username -->
+              <input
+                type="text"
+                placeholder="Enter Username"
+                name="uname"
+                required
+              />
+
+              <!-- Label untuk password -->
+              <label for="psw"><b>Password</b></label>
+              <!-- Input password -->
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+
+              <!-- Tombol untuk submit form (login) -->
+              <button type="submit">Login</button>
+              <!-- Checkbox untuk mengingat username/password -->
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Remember me
+              </label>
+            </div>
+
+            <!-- Container untuk tombol cancel dan opsi lupa password -->
+            <div class="container" style="background-color: #f1f1f1">
+              <!-- Tombol untuk membatalkan dan menutup modal -->
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <!-- Teks dan tautan untuk lupa password -->
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Menyertakan file JavaScript eksternal untuk mengelola logika login -->
+    <script type="text/javascript" src="script/login.js"></script>
+  </body>
+</html>
