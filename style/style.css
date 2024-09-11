@@ -1,0 +1,307 @@
+/* Reset dan gaya dasar untuk perangkat mobile */
+* {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+body {
+    margin: 0;
+    background-color: #121212;
+    /* Latar belakang gelap */
+    color: #e0e0e0;
+    /* Teks berwarna terang */
+    font-family: Arial, sans-serif;
+}
+
+.paragrafLihatDetail1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Heading */
+h1 {
+    color: rgb(255, 255, 255);
+    /* Warna teks putih */
+    text-align: center;
+    font-weight: 900;
+    background-color: #1f2126;
+    /* Latar belakang hitam */
+    padding: 1rem;
+    font-size: 2rem;
+    /* Menambahkan padding untuk meningkatkan keterbacaan */
+    text-shadow: 2px 2px 2px #bb86fc;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    /* Warna teks putih */
+    text-align: center;
+    font-weight: 900;
+    background-color: #1f2126;
+    /* Latar belakang hitam */
+    padding: 1rem;
+    font-size: 1.5rem;
+    /* Menambahkan padding untuk meningkatkan keterbacaan */
+    text-shadow: 2px 2px 2px #bb86fc;
+}
+
+.h-2-fakta-unik {
+    color: rgb(255, 255, 255);
+    /* Warna teks putih */
+    text-align: center;
+    font-weight: 900;
+    background-color: #1f2126;
+    /* Latar belakang hitam */
+    padding: 1rem;
+    /* Menambahkan padding untuk meningkatkan keterbacaan */
+    text-shadow: 2px 2px 2px #bb86fc;
+}
+
+
+.p_tile_instagram {
+    color: rgb(255, 255, 255);
+    /* Warna teks putih */
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    /* Latar belakang hitam */
+    padding: 1rem;
+    /* Menambahkan padding untuk meningkatkan keterbacaan */
+    text-shadow: 1px 1px 2px #bb86fc;
+}
+
+/* Tabel */
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid #333;
+    /* Warna border lebih gelap */
+    background-color: #161617;
+}
+
+
+td {
+    color: #ffffff;
+    /* Teks biru muda */
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+img {
+    margin-bottom: 10px;
+    border-radius: 8%;
+}
+
+/* Image Holder */
+.image-holder {
+    display: flex;
+    flex-direction: column;
+    /* Orientasi vertikal untuk mobile */
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile button {
+    margin-top: 5px;
+}
+
+/* Button */
+.button-lihat-detail {
+    padding: 12px 24px;
+    border: none;
+    font-size: 14px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    /* Warna latar belakang tombol gelap */
+    color: #ffffff;
+    /* Warna teks terang */
+    transition-duration: 0.4s;
+    border-radius: 20px;
+}
+
+.button-lihat-detail:hover {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
+    /* Warna tombol saat hover */
+}
+
+/* Table Holder */
+.table-holder {
+    background-color: #28282a;
+    /* Latar belakang tabel gelap */
+    border: 2px solid #333;
+    /* Warna border tabel */
+    border-radius: 20px;
+    padding: 10px;
+    /* Padding untuk mobile */
+    margin: 10px;
+    /* Margin untuk mobile */
+    overflow: auto;
+}
+
+.table-holder table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-holder th,
+.table-holder td {
+    border: 1px solid #333;
+    /* Warna border sel tabel */
+    padding: 6px;
+    /* Padding untuk mobile */
+    text-align: left;
+}
+
+.table-holder th {
+    background-color: #333;
+    /* Latar belakang header tabel gelap */
+    color: #e0e0e0;
+    /* Teks header tabel terang */
+    text-align: center;
+}
+
+.table-holder td {
+    background-color: #1e1e1e;
+    /* Latar belakang sel tabel gelap */
+}
+
+/* Instagram Link Holder */
+.instagram-link-holder {
+    background-color: #28282a;
+    /* Latar belakang link holder gelap */
+    border: 2px solid #333;
+    /* Warna border link holder */
+    border-radius: 20px;
+    padding: 10px;
+    /* Padding untuk mobile */
+    margin: 10px;
+    /* Margin untuk mobile */
+}
+
+.instagram-link-holder p,
+.instagram-link-holder ul {
+    margin: 0;
+    padding: 0;
+}
+
+.instagram-link-holder ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.instagram-link-holder li {
+    margin: 5px 0;
+    /* Jarak antar item list */
+    border: 2px solid #333;
+    /* Warna border item list */
+    border-radius: 20px;
+    padding: 10px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    /* Latar belakang item list gelap */
+}
+
+.instagram-link-holder a {
+    text-decoration: none;
+    color: #ffffff;
+    /* Teks link berwarna biru muda */
+}
+
+.instagram-link-holder a:hover {
+    text-decoration: none;
+}
+
+.instagram-link-holder li:hover {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
+}
+
+.paragraphDisplayerClass {
+    background-color: #333;
+    /* Latar belakang paragraf gelap */
+    color: #e0e0e0;
+    /* Teks paragraf terang */
+    padding: 10px;
+    width: 380px;
+    border-radius: 20px;
+}
+
+/* Media Query untuk layar lebih besar dari 768px */
+@media (min-width: 768px) {
+    .image-holder {
+        flex-direction: row;
+        /* Orientasi horizontal untuk layar lebih besar */
+        align-items: flex-start;
+    }
+
+    .profile img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .button-lihat-detail {
+        padding: 15px 32px;
+        font-size: 15px;
+    }
+
+    .table-holder,
+    .instagram-link-holder {
+        margin: 20px;
+        /* Margin untuk layar lebih besar */
+        padding: 20px;
+        /* Padding untuk layar lebih besar */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .table-holder th,
+    .table-holder td {
+        padding: 8px;
+    }
+}
+
+/* Media Query untuk layar lebih besar dari 989px */
+@media (min-width: 989px) {
+    .table-holder>table {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Query untuk layar lebih besar dari 899px */
+@media (min-width: 899px) {
+    .table-holder>table {
+        font-size: 0.875rem;
+    }
+}
+
+.container-fakta-unik {
+    flex-direction: column;
+}

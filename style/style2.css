@@ -1,0 +1,159 @@
+/* Aturan umum untuk elemen-elemen */
+.container-fakta-unik,
+.container-fakta-unik-2 {
+    margin: 1rem;
+}
+
+/* Tombol-tombol */
+.button-lihat-detail2,
+.button-sembunyikan-detail2 {
+    padding: 12px 24px;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 400px;
+}
+
+.fakta-unik {
+    margin: 0.5rem;
+}
+
+.rounded-corner {
+    border-radius: 20px;
+}
+
+.fakta-unik {
+    display: flex;
+    flex-direction: column;
+}
+
+.fakta-unik-p {
+    display: none;
+    text-align: left;
+}
+
+.fakta-unik>.container-fakta-unik {
+    margin: 1.2rem;
+}
+
+.container-fakta-unik-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.title-unik-container {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.container-fakta-unik {
+    display: flex;
+}
+
+.button-lihat-detail2 {
+    padding: 16px 32px;
+    border: none;
+    font-size: 15px;
+    background-color: #846bf0;
+    color: rgb(255, 255, 255);
+}
+
+.button-sembunyikan-detail2 {
+    border: 1px solid;
+    font-size: 15px;
+}
+
+.button-lihat-detail2 {
+    transition-duration: 0.4s;
+}
+
+.button-sembunyikan-detail2:hover {
+    background: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
+    color: white;
+}
+
+.button-lihat-detail2:hover {
+    background: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
+    color: white;
+}
+
+.foto-unik {
+    border-radius: 15px;
+}
+
+
+/* Media queries untuk perangkat mobile */
+@media (max-width: 768px) {
+    .rounded-corner {
+        border-radius: 10px;
+    }
+
+    .fakta-unik,
+    .container-fakta-unik,
+    .container-fakta-unik-2 {
+        margin: 0.5rem;
+        flex-direction: column;
+    }
+
+    .button-lihat-detail2,
+    .button-sembunyikan-detail2 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .foto-unik {
+        border-radius: 10px;
+    }
+
+    .title-unik-container {
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .button-lihat-detail2,
+    .button-sembunyikan-detail2 {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .title-unik-container {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+
+    .container-fakta-unik {
+        flex-direction: column;
+    }
+
+    .fakta-unik {
+        margin: 0.2rem;
+    }
+
+    .foto-unik {
+        border-radius: 5px;
+    }
+}
+
+
+/* Aturan umum untuk container gambar */
+.image-container {
+    display: flex;
+    justify-content: center;
+    /* Mengatur konten (gambar) di tengah secara horizontal */
+    align-items: center;
+    /* Mengatur konten (gambar) di tengah secara vertikal */
+    margin: 1rem;
+}
+
+/* Untuk layar dengan lebar 768px dan lebih besar */
+@media (min-width: 768px) {
+    .foto-unik {
+        max-width: 100%;
+        /* Pastikan gambar tidak melebihi lebar kontainer */
+        height: auto;
+        /* Menjaga rasio aspek gambar */
+    }
+}

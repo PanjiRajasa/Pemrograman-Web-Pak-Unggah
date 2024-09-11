@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kotlin Group Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style2.css" />
+    <link rel="stylesheet" href="style/mobile-first-approach.css" />
+    <link rel="stylesheet" href="style/media-queries.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="image/Foto Bok-Su game Married In Red.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- First course from Mr. Unggah :) -->
+
+    <h1>Kotlin Group Web</h1>
+
+    <section class="image-holder">
+      <div class="profile">
+        <img
+          src="image/Foto diri formal.jpg"
+          alt="Foto Diri"
+          width="180px"
+          title="Panjiee"
+        />
+        <button
+          class="button-lihat-detail"
+          id="buttonPanji"
+          onclick="addDetailNama('buttonPanji')"
+        >
+          Lihat Detail
+        </button>
+      </div>
+
+      <div class="profile">
+        <img
+          src="image/Foto Jojo.jpg"
+          alt="Foto Jojo"
+          width="180px"
+          title="Jojo"
+        />
+        <button
+          class="button-lihat-detail"
+          id="buttonJojo"
+          onclick="addDetailNama('buttonJojo')"
+        >
+          Lihat Detail
+        </button>
+      </div>
+
+      <div class="profile">
+        <img
+          src="image/Foto Rangga Hehe.jpg"
+          alt="Foto Rangga Hehe"
+          width="180px"
+          title="Rangga Aditya"
+        />
+        <button
+          class="button-lihat-detail"
+          id="buttonRangga"
+          onclick="addDetailNama('buttonRangga')"
+        >
+          Lihat Detail
+        </button>
+      </div>
+    </section>
+
+    <section class="paragrafLihatDetail1">
+      <!-- Tempatkan elemen detail di sini -->
+      <div id="paragraphDisplayer" class="paragraphDisplayerClass"></div>
+    </section>
+
+    <section class="table-holder">
+      <p class="p_tile_instagram">Biodata Lengkap Kami</p>
+      <table>
+        <tr>
+          <th>Nama</th>
+          <th>Nomor Absen</th>
+          <th>NIS</th>
+          <th>NISN</th>
+          <th>Kelas</th>
+          <th>Jurusan</th>
+          <th>Tanggal Lahir</th>
+          <th>Alamat</th>
+          <th>Hobby</th>
+        </tr>
+
+        <tr>
+          <td>I Gusti Panji Rajasa</td>
+          <td>12</td>
+          <td>31538</td>
+          <td>0071658108</td>
+          <td>XI RPL3</td>
+          <td>RPL (Rekayasa Perangkat Lunak)</td>
+          <td>22 Agustus 2007</td>
+          <td>
+            JL. Labak III No.6B, Pamecutan Kelod, Denpasar Barat, Bali,
+            Indonesia
+          </td>
+          <td>Cyber security</td>
+        </tr>
+      </table>
+      <br />
+
+      <table>
+        <tr>
+          <th>Nama</th>
+          <th>Nomor Absen</th>
+          <th>NIS</th>
+          <th>NISN</th>
+          <th>Kelas</th>
+          <th>Jurusan</th>
+          <th>Tanggal Lahir</th>
+          <th>Alamat</th>
+          <th>Hobby</th>
+        </tr>
+
+        <tr>
+          <td>Jonathan Lionel</td>
+          <td>25</td>
+          <td>31551</td>
+          <td>0084327741</td>
+          <td>XI RPL3</td>
+          <td>RPL (Rekayasa Perangkat Lunak)</td>
+          <td>14 Mei 2008</td>
+          <td>Jl Tukad Buana VI No 5</td>
+          <td>Renang, Game</td>
+        </tr>
+      </table>
+      <br />
+
+      <table>
+        <tr>
+          <th>Nama</th>
+          <th>Nomor Absen</th>
+          <th>NIS</th>
+          <th>NISN</th>
+          <th>Kelas</th>
+          <th>Jurusan</th>
+          <th>Tanggal Lahir</th>
+          <th>Alamat</th>
+          <th>Hobby</th>
+        </tr>
+
+        <tr>
+          <td>I Putu Rangga Aditya Nandhana</td>
+          <td>20</td>
+          <td>31546</td>
+          <td>0075535417</td>
+          <td>XI RPL3</td>
+          <td>RPL (Rekayasa Perangkat Lunak)</td>
+          <td>6 Oktober 2007</td>
+          <td>JL Cokroaminoto GG kendodong no 11A</td>
+          <td>Game, musik</td>
+        </tr>
+      </table>
+      <br />
+    </section>
+
+    <section class="instagram-link-holder">
+      <p class="p_tile_instagram">Berikut adalah link Instagram kami:</p>
+      <ul>
+        <a href="https://www.instagram.com/"
+          ><li>Instagram Panji: panjie_new</li></a
+        >
+        <a href="https://www.instagram.com/"
+          ><li>Instagram Jojo: jojo_lionl</li></a
+        >
+        <a href="https://www.instagram.com/"
+          ><li>Instagram Rangga Aditya: ranggavidioarts</li></a
+        >
+      </ul>
+    </section>
+
+    <section class="fakta-unik">
+      <div class="title-unik-container">
+        <h2 class="h-2-fakta-unik">Fakta unik tentang kami</h2>
+      </div>
+
+      <div class="container-fakta-unik-2">
+        <div class="container-fakta-unik">
+          <div class="image-container">
+            <img
+              src="image/Foto diri formal.jpg"
+              alt="Foto Diri"
+              width="201px"
+              title="Panjiee"
+              class="foto-unik"
+            />
+          </div>
+
+          <button class="button-lihat-detail2" id="buttonPanjiLihatDetail">
+            Lihat
+          </button>
+          <button class="button-sembunyikan-detail2" id="buttonSembunyikan1">
+            Sembunyikan
+          </button>
+          <div
+            id="paragraphDisplayerUnique1"
+            class="paragraphDisplayerClass rounded-corner"
+          >
+            <p class="fakta-unik-p"></p>
+          </div>
+        </div>
+
+        <div class="container-fakta-unik">
+          <div class="image-container">
+            <img
+              src="image/Foto Jojo.jpg"
+              alt="Foto Jojo"
+              width="201px"
+              title="Jojo"
+              class="foto-unik"
+            />
+          </div>
+
+          <button class="button-lihat-detail2" id="buttonJojoLihatDetail">
+            Lihat
+          </button>
+          <button class="button-sembunyikan-detail2" id="buttonSembunyikan2">
+            Sembunyikan
+          </button>
+          <div
+            id="paragraphDisplayerUnique2"
+            class="paragraphDisplayerClass rounded-corner"
+          >
+            <p class="fakta-unik-p"></p>
+          </div>
+        </div>
+
+        <div class="container-fakta-unik">
+          <div class="image-container">
+            <img
+              src="image/Foto Rangga Hehe.jpg"
+              alt="Foto Rangga Hehe"
+              width="201px"
+              title="Rangga Aditya"
+              class="foto-unik"
+            />
+          </div>
+
+          <button class="button-lihat-detail2" id="buttonRanggaLihatDetail">
+            Lihat
+          </button>
+          <button class="button-sembunyikan-detail2" id="buttonSembunyikan3">
+            Sembunyikan
+          </button>
+          <div
+            id="paragraphDisplayerUnique3"
+            class="paragraphDisplayerClass rounded-corner"
+          >
+            <p class="fakta-unik-p"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="informasi-dasar">
+      <div class="title-unik-container">
+        <h2 class="h-2-fakta-unik">Deskripsi Tentang Kami</h2>
+      </div>
+
+      <div class="search-input-container">
+        <input type="search" id="searchInput" placeholder="Cari nama..." class="input-cari-nama" />
+        <div class="tips-search-name">
+          <p class="info-panji">
+            Tips: <br />
+            Cari Panji/panji untuk deskripsi Panji <br />
+            Cari Jojo/jojo untuk deskripsi Jojo <br />
+            Cari Rangga/rangga untuk deskripsi Rangga <br />
+            &gt;&gt;Lalu Scroll Kebawah&lt;&lt;
+          </p>
+        </div>
+      </div>
+      
+
+      <article class="container-informasi-dasar" id="panji">
+        <img
+          src="image/Foto diri formal.jpg"
+          alt="Foto Diri"
+          width="201px"
+          title="Panjiee"
+          class="foto-unik"
+        />
+        <p class="info-panji">
+          Halo! Perkenalkan, saya Panji. Saya lahir pada tanggal 22 Agustus
+          2007, dan saat ini saya berusia 17 tahun. Saya adalah siswa di SMKN 1
+          Denpasar, di mana saya mulai bersekolah pada tahun 2023. Di sekolah,
+          saya sangat menyukai dunia pemrograman, dan ini adalah salah satu hobi
+          terbesar saya. Ketertarikan saya pada coding dimulai sejak saya
+          pertama kali mengenal komputer dan programming. Seiring waktu, saya
+          semakin mendalami berbagai bahasa pemrograman dan teknologi, dan hal
+          ini menjadi lebih dari sekadar hobi — itu adalah passion saya. Salah
+          satu momen paling membanggakan dalam perjalanan saya adalah ketika
+          saya berhasil meraih juara 3 dalam lomba LKS (Lomba Kompetensi Siswa)
+          untuk kategori desktop menggunakan bahasa C#. Ini adalah pencapaian
+          yang sangat berarti bagi saya dan menjadi motivasi untuk terus
+          berkembang. Saya senang mengeksplorasi berbagai aspek dalam dunia
+          pemrograman dan selalu mencari tantangan baru. Melalui coding, saya
+          dapat mengekspresikan kreativitas saya dan menyelesaikan berbagai
+          masalah dengan cara yang inovatif. Sekian perkenalan singkat tentang
+          saya. Terima kasih telah meluangkan waktu untuk mengenal saya lebih
+          dekat!
+        </p>
+      </article>
+
+      <article class="container-informasi-dasar" id="jojo">
+        <img
+          src="image/Foto Jojo.jpg"
+          alt="Foto Diri"
+          width="201px"
+          title="Panjiee"
+          class="foto-unik"
+        />
+        <p class="info-panji">
+          Hai! Perkenalkan, nama saya Jonathan Lionel bisa di panggil  Jojo. Saya lahir tanggal 14 Mei, tahun 2008 dan saat ini saya berumur 16 tahun. Saya adalah Siswa di SMKN 1 Denpasar, dan Saya mulai bersekolah di sini sejak tahun 2023. Saya di sekolah, Saya sangat penasaran akan dunia pemrograman, karena Saya melihat orang-orang membuat game dari bahasa-bahasa pemrograman, dan Saya tertarik tentang pemrograman. Dan hobi Saya juga dari kecil sudah suka akan keteknologian. Dan ini sudah dibilang itu adalah passion saya. Dan kedepan nya saya akan terus dan terus belajar tentang pemrograman dan dalam bidang keteknologian untuk mencapai sampai kejenjang/tahap berikutnya. Terimakasih telah meluangkan waktu untuk mengenal dan mengetahui tentang saya!
+        </p>
+      </article>
+
+      <article class="container-informasi-dasar" id="rangga">
+        <img
+          src="image/Foto Rangga Hehe.jpg"
+          alt="Foto Diri"
+          width="201px"
+          title="Panjiee"
+          class="foto-unik"
+        />
+        <p class="info-panji">
+          Halo cuy perkenalkan nama ku i putu Rangga Aditya nandhana bisa dipanggil rangga. Diriku berumur 16 tahun sebentar lagi mau 17 dan juga saya lahir tahun 2007. Saya tinggal didenpasar dan sekolah di SMKN 1 Denpasar, saya lumayan suka program jika selalu berhasil namun jika salah sedikit atau gk Nemu pasti diriku langsung down dan tidak ingin lagi. Diriku suka sekali dengan musik apa lagi kalo musiknya vibenya tu MC banget!!. Lalu saya juga suka rambut yang pendek banget karena agar tidak dilock guru dan nyaman heh
+        </p>
+      </article>
+
+    </section>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

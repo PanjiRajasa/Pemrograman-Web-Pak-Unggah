@@ -1,0 +1,47 @@
+.container-informasi-dasar {
+    display: none;
+    flex-direction: column;
+    /* Menyusun elemen dalam kolom untuk tampilan mobile */
+    align-items: center;
+    text-align: left;
+    padding: 2.378rem;
+    margin: 1rem 1rem;
+    margin-bottom: 1.234rem;
+    border-radius: 100px 15px 100px 10px;
+    background-color: #ddc8c8;
+}
+
+/* Media query untuk layar yang lebih besar dari 768px */
+@media (min-width: 768px) {
+    .container-informasi-dasar {
+        flex-direction: row;
+        /* Menyusun elemen dalam baris pada layar besar */
+        align-items: flex-start;
+        /* Menyelaraskan gambar dan teks ke bagian atas */
+        justify-content: center;
+        /* Mengatur konten di tengah secara horizontal */
+        padding: 2.378rem;
+    }
+
+    .foto-unik {
+        margin-right: 1.5rem;
+        /* Memberi jarak antara gambar dan teks */
+    }
+
+    .info-panji {
+        /* Meningkatkan ukuran font pada layar besar */
+        max-width: 600px;
+        /* Maksimal lebar teks */
+        font-family: "Jersey 10", sans-serif;
+        letter-spacing: 1.2px;
+        font-size: 1.345rem;
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+        /* 
+            font-weight untuk ketebalan (bold)
+            font-style untuk kemiringan (italic)
+        */
+    }
+}

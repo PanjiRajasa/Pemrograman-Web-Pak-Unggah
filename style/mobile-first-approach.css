@@ -1,0 +1,51 @@
+.foto-unik {
+    width: 100%;
+    /* Menyesuaikan lebar gambar dengan kontainer pada tampilan mobile */
+    max-width: 201px;
+    /* Maksimal lebar gambar */
+    height: auto;
+    /* Menjaga rasio aspek gambar */
+    border-radius: 8px;
+    /* Membuat sudut gambar melengkung */
+    margin-bottom: 1rem;
+    /* Memberi jarak antara gambar dan teks */
+    text-align: left;
+}
+
+.info-panji {
+    font-size: 1rem;
+    /* Ukuran font untuk paragraf */
+    line-height: 1.5;
+    /* Jarak antar baris untuk keterbacaan line-height itu untuk jarak antara baris atas dan bawah*/
+    text-align: left;
+    color: rgb(36, 30, 30);
+    font-size: 1.345rem;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input-cari-nama {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    /*display: inline-block memungkinkan elemen berada dalam satu baris seperti elemen inline, tetapi dengan 
+                            kemampuan untuk mengatur ukuran dan tata letak seperti elemen block.*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.tips-search-name {
+    background-color: #ddc8c8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 2.378rem;
+    margin: 1rem 1rem;
+    margin-bottom: 1.234rem;
+    border-radius: 15px;
+}
