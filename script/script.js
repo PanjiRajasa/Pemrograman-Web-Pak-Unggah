@@ -112,3 +112,8 @@ document.getElementById("searchInput").addEventListener("input", function () {
     
   });
 });
+
+// supaya ga bisa balik lagi ke homepage tanpa login/register terlebih dahulu
+function goBack() {
+  window.history.back();
+}
