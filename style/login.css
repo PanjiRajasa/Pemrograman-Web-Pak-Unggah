@@ -49,7 +49,7 @@ body {
   
   /* Atur ukuran gambar avatar dan buat menjadi berbentuk lingkaran */
   img.avatar {
-    width: 40%; /* Lebar 40% dari kontainer */
+    width: 20%; /* Lebar n% dari kontainer */
     border-radius: 50%; /* Membuat gambar menjadi lingkaran */
   }
   
@@ -76,13 +76,18 @@ body {
   
   /* untuk span elemen create an account */
   span.cac {
-    padding-top: 16px; /* jarak keatas */
-    display: block; /* supaya jadi element block*/
+    display: flex; /* display flex */
+    justify-content: center; /* biar ketengah */
+    padding-top: 12px; /* padding top */
+    gap: 4px; /* gap antar text*/
   }
 
   /* untuk span element don't have an account */
   span.aha {
-    text-align: center;
+    display: flex; /* display flex */
+    justify-content: center; /* biar ketengah */
+    padding-top: 12px; /* padding top */
+    gap: 4px; /* gap antar text*/
   }
   
   /* Style untuk modal (latar belakang) */
