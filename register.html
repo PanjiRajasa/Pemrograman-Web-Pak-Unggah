@@ -24,7 +24,7 @@
 
         <!-- Tombol untuk membuka modal dengan mengatur display modal menjadi 'block' -->
         <button onclick="document.getElementById('id01').style.display='block'" class="tombol-login">
-          Login
+          Sign Up
         </button>
 
         <!-- Elemen modal yang akan ditampilkan saat tombol di klik -->
@@ -61,6 +61,19 @@
                 required
               />
 
+              <!-- label untuk nomor telepon -->
+              <label for="phone"><b>Telephone Number:</b></label>
+              <!-- input nomor telepon -->
+              <input type="tel" id="phone" name="phone" placeholder="Enter your telephone number"  oninput="validatePhoneInput(this)" required>
+
+              <!-- label untuk email -->
+              <label for="email"><b>Email:</b></label>
+              <!-- input email -->
+              <input type="email" id="phone" name="phone" placeholder="Enter your email" 
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+              minlength="5" maxlength="50"
+              required>
+
               <!-- Label untuk password -->
               <label for="psw"><b>Password</b></label>
               <!-- Input password -->
@@ -70,14 +83,22 @@
                 name="psw"
                 required
               />
+                
+              <!-- label untuk confir password -->
+              <label for="psw-repeat"><b>Confirm Password</b></label>
+              <!-- input password -->
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
               <!-- Tombol untuk submit form (login) -->
-              <button type="submit" class="tombol-login">Login</button>
+              <button type="submit" class="tombol-login">Sign Up</button>
               <!-- Checkbox untuk mengingat username/password -->
               <label>
                 <input type="checkbox" checked="checked" name="remember" />
                 Remember me
               </label>
+
+              <!-- paragraf minta persetujuan user -->
+              <p>By creating an account you agree to our <a href="#" class="link-terms-privacy">Terms & Privacy</a>.</p>
             </div>
 
             <!-- Container untuk tombol cancel dan opsi lupa password -->
@@ -90,11 +111,9 @@
               >
                 Cancel
               </button>
-              <!-- Teks dan tautan untuk lupa password -->
-              <span class="psw">Forgot <a href="#" class="link-lupa-password">password?</a></span>
 
               <!-- teks untuk pindah ke form signup --> 
-              <span class="cac">Don't have an account yet? <a href="register.html" class="link-lupa-password">Create an Account</a></span>
+              <span class="cac">Already have an account? <a href="login.html" class="link-lupa-password">Login</a></span>
             </div>
           </form>
         </div>
@@ -103,5 +122,8 @@
 
     <!-- Menyertakan file JavaScript eksternal untuk mengelola logika login -->
     <script type="text/javascript" src="script/login.js"></script>
+
+    <!-- Menyertakan file JavaScript eksternal untuk mengelola logika register -->
+    <script type="text/javascript" src="script/register.js"></script>
   </body>
 </html>

@@ -1,10 +1,14 @@
 /* Mengatur font untuk seluruh body menggunakan Arial, Helvetica, atau sans-serif */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
   }
   
   /* Mengatur input teks dan password agar memiliki lebar penuh */
-  input[type=text], input[type=password] {
+  input[type=text], input[type=password], input[type=tel], input[type=email] {
     width: 100%; /* Lebar penuh */
     padding: 12px 20px; /* Padding di dalam input */
     margin: 8px 0; /* Jarak vertikal */
@@ -52,12 +56,22 @@ body {
   /* Padding di dalam kontainer */
   .container {
     padding: 16px;
+
+    /* bakcground */
+    background-color: #1f2126;
   }
   
   /* Style untuk elemen span yang mengandung password yang dilupakan */
   span.psw {
     float: right; /* Teks berada di sebelah kanan */
     padding-top: 16px; /* Jarak di atas teks */
+  }
+  
+  /* untuk span elemen create an account */
+  span.cac {
+    padding-top: 16px; /* jarak keatas */
+    text-align: center; /* biar ketengah */
+    display: block; /* supaya jadi element block*/
   }
   
   /* Style untuk modal (latar belakang) */
@@ -77,9 +91,9 @@ body {
   
   /* Konten/Box dalam modal */
   .modal-content {
-    background-color: #fefefe; /* Latar belakang putih */
+    background-color:  #121212; /* Latar belakang */
     margin: 5% auto 15% auto; /* Marginal secara otomatis, dengan jarak 5% dari atas dan 15% dari bawah */
-    border: 1px solid #888; /* Border abu-abu */
+    border: 1px solid #1f2126; /* Border abu-abu */
     width: 80%; /* Lebar 80% dari layar */
   }
   
@@ -128,4 +142,32 @@ body {
        width: 100%; /* Tombol batal memiliki lebar penuh */
     }
   }
-  
+
+/* untuk judul form login */
+.judul-form-login {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 900;
+  background-color: #1f2126;
+  padding: 1rem;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px #bb86fc;
+}
+
+/* untuk tombol login saat di hover */
+.tombol-login {
+  background: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
+  color: white;
+}
+
+/* untuk 'a' di text 'forgot password?' */
+.link-lupa-password {
+  text-decoration: underline; /* text decoration */
+  color: white; /* warna text */
+}
+
+/* untuk 'a' di text terms and privacy */
+.link-terms-privacy {
+  text-decoration: underline; /* text decoration */
+  color: white; /* warna text */
+}
