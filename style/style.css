@@ -305,3 +305,8 @@ img {
 .container-fakta-unik {
     flex-direction: column;
 }
+
+/* untuk button logout */
+.button-logout {
+    margin-top: 12px;
+}

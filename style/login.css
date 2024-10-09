@@ -55,7 +55,14 @@ body {
   
   /* Padding di dalam kontainer */
   .container {
-    padding: 16px;
+    padding: 16px; /* padding */
+
+    /* bakcground */
+    background-color: #1f2126;
+  }
+
+  .container-register {
+    padding: 10px; /* padding */
 
     /* bakcground */
     background-color: #1f2126;
@@ -70,8 +77,12 @@ body {
   /* untuk span elemen create an account */
   span.cac {
     padding-top: 16px; /* jarak keatas */
-    text-align: center; /* biar ketengah */
     display: block; /* supaya jadi element block*/
+  }
+
+  /* untuk span element don't have an account */
+  span.aha {
+    text-align: center;
   }
   
   /* Style untuk modal (latar belakang) */
@@ -120,17 +131,6 @@ body {
     animation: animatezoom 0.6s; /* Animasi zoom di browser lain */
   }
   
-  /* Animasi zoom dari kecil ke besar (untuk browser Webkit) */
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} /* Mulai dari ukuran 0 (kecil) */
-    to {-webkit-transform: scale(1)} /* Berakhir pada ukuran penuh */
-  }
-  
-  /* Animasi zoom dari kecil ke besar */
-  @keyframes animatezoom {
-    from {transform: scale(0)} /* Mulai dari ukuran 0 (kecil) */
-    to {transform: scale(1)} /* Berakhir pada ukuran penuh */
-  }
   
   /* Ubah style untuk span dan tombol cancel pada layar kecil (max-width 300px) */
   @media screen and (max-width: 300px) {
