@@ -157,3 +157,19 @@
         /* Menjaga rasio aspek gambar */
     }
 }
+
+ .ceritaku1, .ceritaku2, .ceritaku3, .ceritaku-rangga {
+    padding: 10px;
+    font-weight: 400;
+ }
+
+.lihat-ceritaku1, .lihat-ceritaku2, .lihat-ceritaku3 {
+    padding: 15px 32px;
+    border-radius: 20px;
+    border: none;
+}
+
+.lihat-ceritaku1:hover, .lihat-ceritaku2:hover, .lihat-ceritaku3:hover {
+    background-color: rgb(193, 179, 179);
+    color: white;
+}

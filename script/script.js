@@ -140,9 +140,4 @@ function goBack() {
   window.history.back();
 }
 
-//function untuk menampilkan teks
-// document.addEventListener("DOMContentLoaded", function() {
 
-//   const tableHolder = document.getElementById("tableHolder");
-//   tableHolder.style.display = "block";
-// });
