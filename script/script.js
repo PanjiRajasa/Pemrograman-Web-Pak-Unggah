@@ -3,25 +3,50 @@ document.addEventListener("DOMContentLoaded", function () {
   const buttonPanji = document.getElementById("buttonPanji");
   const buttonJojo = document.getElementById("buttonJojo");
   const buttonRangga = document.getElementById("buttonRangga");
-  const paragraphDisplayer = document.getElementById("paragraphDisplayer");
+
+  // Deklarasi elemen detailNama di luar fungsi
+  const detailNama = document.createElement("p");
+  const tableHolder1 = document.getElementById("tableHolder1");
+  const tableHolder2 = document.getElementById("tableHolder2");
+  const tableHolder3 = document.getElementById("tableHolder3");
+  const paragraphDisplayer1 = document.getElementById("paragraphDisplayer1");
+  const paragraphDisplayer2 = document.getElementById("paragraphDisplayer2");
+  const paragraphDisplayer3 = document.getElementById("paragraphDisplayer3");
 
   function addDetailNama(buttonId) {
-    let detailNama = document.createElement("p");
+    // Menyembunyikan semua table holder sebelum menampilkan yang relevan
+    tableHolder1.style.display = "none";
+    tableHolder2.style.display = "none";
+    tableHolder3.style.display = "none";
 
     if (buttonId === "buttonPanji") {
       detailNama.textContent = "Nama saya Panji, saya hobby bermain game";
+      // Mengupdate isi elemen dengan detail
+      paragraphDisplayer1.innerHTML = ""; // Menghapus isi sebelumnya
+      paragraphDisplayer1.appendChild(detailNama); // Menambahkan detailNama
+      tableHolder1.style.display = "block"; // Menampilkan tableHolder1
+
+      // Menggulung ke elemen paragraphDisplayer
+      paragraphDisplayer1.scrollIntoView({ behavior: "smooth" });
     } else if (buttonId === "buttonJojo") {
       detailNama.textContent = "Nama saya Jojo, saya hobby berenang";
+      // Mengupdate isi elemen dengan detail
+      paragraphDisplayer2.innerHTML = ""; // Menghapus isi sebelumnya
+      paragraphDisplayer2.appendChild(detailNama); // Menambahkan detailNama
+      tableHolder2.style.display = "block"; // Menampilkan tableHolder2
+
+      // Menggulung ke elemen paragraphDisplayer
+      paragraphDisplayer2.scrollIntoView({ behavior: "smooth" });
     } else if (buttonId === "buttonRangga") {
       detailNama.textContent = "Nama saya Rangga, saya hobby bersepeda";
+      // Mengupdate isi elemen dengan detail
+      paragraphDisplayer3.innerHTML = ""; // Menghapus isi sebelumnya
+      paragraphDisplayer3.appendChild(detailNama); // Menambahkan detailNama
+      tableHolder3.style.display = "block"; // Menampilkan tableHolder3
+
+      // Menggulung ke elemen paragraphDisplayer
+      paragraphDisplayer3.scrollIntoView({ behavior: "smooth" });
     }
-
-    // Mengupdate isi elemen dengan detail
-    paragraphDisplayer.innerHTML = "";
-    paragraphDisplayer.appendChild(detailNama);
-
-    // Menggulung ke elemen paragraphDisplayer
-    paragraphDisplayer.scrollIntoView({ behavior: "smooth" });
   }
 
   // Event listener untuk tombol
@@ -29,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
   buttonJojo.addEventListener("click", () => addDetailNama("buttonJojo"));
   buttonRangga.addEventListener("click", () => addDetailNama("buttonRangga"));
 });
-
 
 //DOM tombol fakta unik untuk menampilkan paragraf fakta unik
 document
@@ -91,7 +115,6 @@ document
     detailUnik.style.display = "none"; // Menyembunyikan elemen <p>
   });
 
-  
 //untuk searchbar
 document.getElementById("searchInput").addEventListener("input", function () {
   const searchValue = this.value.toLowerCase(); // Mendapatkan nilai input dan diubah ke lowercase
@@ -109,7 +132,6 @@ document.getElementById("searchInput").addEventListener("input", function () {
     } else {
       article.style.display = "none"; // Sembunyikan artikel
     }
-    
   });
 });
 
@@ -117,3 +139,10 @@ document.getElementById("searchInput").addEventListener("input", function () {
 function goBack() {
   window.history.back();
 }
+
+//function untuk menampilkan teks
+// document.addEventListener("DOMContentLoaded", function() {
+
+//   const tableHolder = document.getElementById("tableHolder");
+//   tableHolder.style.display = "block";
+// });

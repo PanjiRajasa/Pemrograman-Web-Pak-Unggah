@@ -22,6 +22,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 
 /* Heading */
@@ -162,6 +163,13 @@ img {
     margin: 10px;
     /* Margin untuk mobile */
     overflow: auto;
+}
+
+#tableHolder1,
+#tableHolder2,
+#tableHolder3 {
+    /* Untuk menyembunyikan */
+    display: none;
 }
 
 .table-holder table {
