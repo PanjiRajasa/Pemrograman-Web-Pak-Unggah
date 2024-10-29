@@ -1,3 +1,10 @@
+/* CSS custom properties */
+:root {
+    --warna-gradasi-button: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    --warna-gradasi-button-hover: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
+    --warna-gradasi-buttonLihatFaktaUnik-hover: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
+}
+
 /* Aturan umum untuk elemen-elemen */
 .container-fakta-unik,
 .container-fakta-unik-2 {
@@ -69,12 +76,12 @@
 }
 
 .button-sembunyikan-detail2:hover {
-    background: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
+    background: var(--warna-gradasi-buttonLihatFaktaUnik-hover);
     color: white;
 }
 
 .button-lihat-detail2:hover {
-    background: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
+    background: var(--warna-gradasi-buttonLihatFaktaUnik-hover);
     color: white;
 }
 

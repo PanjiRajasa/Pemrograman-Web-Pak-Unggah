@@ -1,3 +1,10 @@
+/* CSS custom properties */
+:root {
+    --warna-gradasi-button: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    --warna-gradasi-button-hover: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
+    --warna-gradasi-buttonLihatFaktaUnik-hover: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
+}
+
 /* Reset dan gaya dasar untuk perangkat mobile */
 * {
     font-family: "Play", sans-serif;
@@ -138,7 +145,7 @@ img {
     border: none;
     font-size: 14px;
     background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    background: var(--warna-gradasi-button);
     /* Warna latar belakang tombol gelap */
     color: #ffffff;
     /* Warna teks terang */
@@ -148,7 +155,7 @@ img {
 }
 
 .button-lihat-detail:hover {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
+    background: var(--warna-gradasi-button-hover);
     /* Warna tombol saat hover */
 }
 
@@ -233,7 +240,7 @@ img {
     border-radius: 20px;
     padding: 10px;
     background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    background: var(--warna-gradasi-button);
     /* Latar belakang item list gelap */
 }
 
@@ -248,7 +255,7 @@ img {
 }
 
 .instagram-link-holder li:hover {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
+    background: var(--warna-gradasi-button-hover);
 }
 
 .paragraphDisplayerClass {
