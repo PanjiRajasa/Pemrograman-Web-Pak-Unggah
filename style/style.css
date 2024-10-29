@@ -144,6 +144,7 @@ img {
     /* Warna teks terang */
     transition-duration: 0.4s;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .button-lihat-detail:hover {
@@ -317,4 +318,5 @@ img {
 /* untuk button logout */
 .button-logout {
     margin-top: 12px;
+    cursor: pointer;
 }

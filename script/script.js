@@ -137,7 +137,16 @@ document.getElementById("searchInput").addEventListener("input", function () {
 
 // supaya ga bisa balik lagi ke homepage tanpa login/register terlebih dahulu
 function goBack() {
-  window.history.back();
+
+  //if history ada (lebih dari 1) maka akan kembali ke halaman sebelumnya, misal user loginnya lewat login.html
+  if(window.history.length > 1) {
+    window.history.back();   
+  } else {
+    //misal user masuknya langsung di project.html/ga ada history dari page apa dia sebelumnya
+    window.location.href = "login.html";
+  }
+  
+
 }
 
 
