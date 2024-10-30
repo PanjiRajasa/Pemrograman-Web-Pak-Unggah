@@ -1,178 +1,311 @@
+/* CSS custom properties */
+:root {
+  --warna-gradasi-button: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  --warna-gradasi-button-hover: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
+  --warna-gradasi-buttonLihatFaktaUnik-hover: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
+  --warna-primary-background: #121212;
+  --warna-secondary-background: #1f2126;
+}
+
+
 /* Mengatur font untuk seluruh body menggunakan Arial, Helvetica, atau sans-serif */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Mengatur input teks dan password agar memiliki lebar penuh */
-  input[type=text], input[type=password], input[type=tel], input[type=email] {
-    width: 100%; /* Lebar penuh */
-    padding: 12px 20px; /* Padding di dalam input */
-    margin: 8px 0; /* Jarak vertikal */
-    display: inline-block; /* Ditampilkan sebagai elemen inline-block */
-    border: 1px solid #ccc; /* Batas tipis di sekitar input */
-    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam total lebar dan tinggi */
-  }
-  
-  /* Mengatur style untuk semua tombol */
-  button {
-    background-color: #04AA6D; /* Warna latar belakang hijau */
-    color: white; /* Warna teks putih */
-    padding: 14px 20px; /* Padding di dalam tombol */
-    margin: 8px 0; /* Jarak vertikal di luar tombol */
-    border: none; /* Tanpa border */
-    cursor: pointer; /* Kursor berubah menjadi pointer saat diarahkan */
-    width: 100%; /* Tombol memiliki lebar penuh */
-  }
-  
-  /* Efek hover pada tombol (sedikit transparan) */
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Style ekstra untuk tombol batal (cancel button) */
-  .cancelbtn {
-    width: auto; /* Lebar otomatis */
-    padding: 10px 18px; /* Padding lebih kecil dari tombol utama */
-    background-color: #f44336; /* Warna latar belakang merah */
-  }
-  
-  /* Pusatkan gambar dan posisikan tombol close (x) */
-  .imgcontainer {
-    text-align: center; /* Gambar berada di tengah */
-    margin: 24px 0 12px 0; /* Jarak vertikal di atas dan bawah */
-    position: relative; /* Untuk memposisikan elemen anak secara absolut */
-  }
-  
-  /* Atur ukuran gambar avatar dan buat menjadi berbentuk lingkaran */
-  img.avatar {
-    width: 20%; /* Lebar n% dari kontainer */
-    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
-  }
-  
-  /* Padding di dalam kontainer */
-  .container {
-    padding: 16px; /* padding */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--warna-primary-background);
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+}
 
-    /* bakcground */
-    background-color: #1f2126;
-  }
+/* Mengatur input teks dan password agar memiliki lebar penuh */
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=email] {
+  width: 100%;
+  /* Lebar penuh */
+  padding: 12px 20px;
+  /* Padding di dalam input */
+  margin: 8px 0;
+  /* Jarak vertikal */
+  display: inline-block;
+  /* Ditampilkan sebagai elemen inline-block */
+  border: 1px solid #ccc;
+  /* Batas tipis di sekitar input */
+  box-sizing: border-box;
+  /* Memastikan padding dan border dihitung dalam total lebar dan tinggi */
+}
 
-  .container-register {
-    padding: 10px; /* padding */
+/* input type checkbox */
+input[type="checkbox"] {
+  padding: 0;
+}
 
-    /* bakcground */
-    background-color: #1f2126;
-  }
-  
-  /* Style untuk elemen span yang mengandung password yang dilupakan */
+/* Efek hover pada tombol (sedikit transparan) */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Style ekstra untuk tombol batal (cancel button) */
+.cancelbtn {
+  width: auto;
+  /* Lebar otomatis */
+  padding: 10px 18px;
+  /* Padding lebih kecil dari tombol utama */
+  background-color: #f44336;
+  /* Warna latar belakang merah */
+}
+
+/* background form */
+.modal-content {
+  background: var(--warna-secondary-background);
+}
+
+/* Pusatkan gambar dan posisikan tombol close (x) */
+.headerContainer {
+  background: var(--warna-secondary-background);
+  text-align: center;
+  /* Gambar berada di tengah */
+  margin: 24px 0 12px 0;
+  /* Jarak vertikal di atas dan bawah */
+  position: relative;
+  /* Untuk memposisikan elemen anak secara absolut */
+}
+
+/* Atur ukuran gambar avatar dan buat menjadi berbentuk lingkaran */
+img.avatar {
+  width: 20%;
+  /* Lebar n% dari kontainer */
+  border-radius: 50%;
+  /* Membuat gambar menjadi lingkaran */
+}
+
+/* Padding di dalam kontainer */
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  /* padding */
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  /* border radius */
+  border-radius: 20px;
+
+  /* bakcground */
+  background-color: var(--warna-secondary-background);
+}
+
+.container-register {
+  padding: 10px;
+  /* padding */
+
+  /* bakcground */
+  background-color: var(--warna-secondary-background);
+}
+
+/* Style untuk elemen span yang mengandung password yang dilupakan */
+span.psw {
+  float: right;
+  /* Teks berada di sebelah kanan */
+}
+
+/* untuk span elemen create an account */
+span.butuhAkun {
+  display: flex;
+  /* display flex */
+  justify-content: center;
+  /* biar ketengah */
+  gap: 4px;
+  /* gap antar text*/
+}
+
+/* untuk span element don't have an account */
+span.aha {
+  display: flex;
+  /* display flex */
+  justify-content: center;
+  /* biar ketengah */
+  padding-top: 12px;
+  /* padding top */
+  gap: 4px;
+  /* gap antar text*/
+}
+
+/* Style untuk modal (latar belakang) */
+.modal {
+  display: none;
+  /* Modal tersembunyi secara default */
+  position: fixed;
+  /* Tetap di tempat, bahkan saat halaman di-scroll */
+  z-index: 1;
+  /* Modal berada di atas elemen lain */
+  left: 0;
+  /* Posisikan di paling kiri */
+  top: 0;
+  /* Posisikan di paling atas */
+  width: 100%;
+  /* Lebar penuh */
+  height: 100%;
+  /* Tinggi penuh */
+  overflow: auto;
+  /* Aktifkan scroll jika diperlukan */
+  background-color: rgb(0, 0, 0);
+  /* Warna fallback hitam */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Latar belakang hitam semi transparan */
+  padding-top: 60px;
+  /* Jarak dari atas halaman */
+}
+
+/* Konten/Box dalam modal */
+.modal-content {
+  background-color: var(--warna-primary-background);
+
+  margin: 0 auto 15% auto;
+
+  width: 80%;
+  /* Lebar 80% dari layar */
+}
+
+
+
+/* Menambahkan animasi zoom ke modal */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  /* Animasi zoom di browser berbasis Webkit */
+  animation: animatezoom 0.6s;
+  /* Animasi zoom di browser lain */
+}
+
+
+/* Ubah style untuk span dan tombol cancel pada layar kecil (max-width 300px) */
+@media screen and (max-width: 300px) {
   span.psw {
-    float: right; /* Teks berada di sebelah kanan */
-    padding-top: 16px; /* Jarak di atas teks */
-  }
-  
-  /* untuk span elemen create an account */
-  span.cac {
-    display: flex; /* display flex */
-    justify-content: center; /* biar ketengah */
-    padding-top: 12px; /* padding top */
-    gap: 4px; /* gap antar text*/
+    display: block;
+    /* Tampilkan sebagai blok */
+    float: none;
+    /* Hilangkan floating */
   }
 
-  /* untuk span element don't have an account */
-  span.aha {
-    display: flex; /* display flex */
-    justify-content: center; /* biar ketengah */
-    padding-top: 12px; /* padding top */
-    gap: 4px; /* gap antar text*/
+  .cancelbtn {
+    width: 100%;
+    /* Tombol batal memiliki lebar penuh */
   }
-  
-  /* Style untuk modal (latar belakang) */
-  .modal {
-    display: none; /* Modal tersembunyi secara default */
-    position: fixed; /* Tetap di tempat, bahkan saat halaman di-scroll */
-    z-index: 1; /* Modal berada di atas elemen lain */
-    left: 0; /* Posisikan di paling kiri */
-    top: 0; /* Posisikan di paling atas */
-    width: 100%; /* Lebar penuh */
-    height: 100%; /* Tinggi penuh */
-    overflow: auto; /* Aktifkan scroll jika diperlukan */
-    background-color: rgb(0,0,0); /* Warna fallback hitam */
-    background-color: rgba(0,0,0,0.4); /* Latar belakang hitam semi transparan */
-    padding-top: 60px; /* Jarak dari atas halaman */
-  }
-  
-  /* Konten/Box dalam modal */
-  .modal-content {
-    background-color:  #121212; /* Latar belakang */
-    margin: 5% auto 15% auto; /* Marginal secara otomatis, dengan jarak 5% dari atas dan 15% dari bawah */
-    border: 1px solid #1f2126; /* Border abu-abu */
-    width: 80%; /* Lebar 80% dari layar */
-  }
-  
-  /* Tombol close (x) untuk menutup modal */
-  .close {
-    position: absolute; /* Diposisikan secara absolut di dalam modal */
-    right: 25px; /* 25px dari kanan */
-    top: 0; /* Di bagian atas */
-    color: #000; /* Warna hitam */
-    font-size: 35px; /* Ukuran font besar */
-    font-weight: bold; /* Font tebal */
-  }
-  
-  /* Efek hover dan fokus pada tombol close */
-  .close:hover,
-  .close:focus {
-    color: red; /* Ubah warna menjadi merah */
-    cursor: pointer; /* Ubah kursor menjadi pointer */
-  }
-  
-  /* Menambahkan animasi zoom ke modal */
-  .animate {
-    -webkit-animation: animatezoom 0.6s; /* Animasi zoom di browser berbasis Webkit */
-    animation: animatezoom 0.6s; /* Animasi zoom di browser lain */
-  }
-  
-  
-  /* Ubah style untuk span dan tombol cancel pada layar kecil (max-width 300px) */
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block; /* Tampilkan sebagai blok */
-       float: none; /* Hilangkan floating */
-    }
-    .cancelbtn {
-       width: 100%; /* Tombol batal memiliki lebar penuh */
-    }
-  }
+}
 
 /* untuk judul form login */
 .judul-form-login {
   color: rgb(255, 255, 255);
+  background: var(--warna-secondary-background);
   text-align: center;
   font-weight: 900;
-  background-color: #1f2126;
   padding: 1rem;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px #bb86fc;
+}
+
+/* untuk header */
+.headerForm {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 900;
   font-size: 2rem;
   text-shadow: 2px 2px 2px #bb86fc;
 }
 
 /* untuk tombol login saat di hover */
 .tombol-login {
-  background: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
+  background: var(--warna-gradasi-buttonLihatFaktaUnik-hover);
   color: white;
+  border-radius: 16px;
+  padding: 0.5rem 5rem;
+  border: none;
+  cursor: pointer; 
 }
 
 /* untuk 'a' di text 'forgot password?' */
 .link-lupa-password {
-  text-decoration: underline; /* text decoration */
-  color: white; /* warna text */
+  text-decoration: underline;
+  /* text decoration */
+  color: white;
+  /* warna text */
+}
+
+.link-buat-akun {
+  text-decoration: none;
+  color: black;
 }
 
 /* untuk 'a' di text terms and privacy */
 .link-terms-privacy {
-  text-decoration: underline; /* text decoration */
-  color: white; /* warna text */
+  text-decoration: underline;
+  /* text decoration */
+  color: white;
+  /* warna text */
+}
+
+/* on working for login social media icon */
+.google {
+  color: white;
+}
+
+.whatsapp {
+  color: white;
+}
+
+.facebook {
+  color: white;
+}
+
+input {
+  border-radius: 16px;
+}
+
+.orContinueWith {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  background: var(--warna-secondary-background);
+}
+
+.socialMediaIcons {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 2rem;
+  column-gap: 2rem;
+  display: flex;
+  justify-content: center;
+  background: var(--warna-secondary-background);
+}
+
+.div-txt-UnderLogin-button {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.underLoginContainer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.butuhAkunContainer {
+  display: flex;
+  row-gap: 2.25rem;
+  flex-direction: column;
+}
+
+.buatAkunButton {
+  padding: 0.5rem 2rem;
+  border: none;
+  cursor: pointer; 
+  width: 50%;
+  border-radius: 20px;
+} 
+
+.buatAkunButtonDiv {
+  display: flex;
+  justify-content: center;
 }

@@ -17,7 +17,10 @@
     />
 
     <!-- import icon css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <main>
@@ -25,59 +28,91 @@
         <!-- Judul -->
         <h1 class="judul-form-login">Kotlin Group Web</h1>
 
-          <!-- Form login -->
-          <form class="modal-content animate" action="project1.html">
-            <!-- Container untuk gambar avatar -->
-            <div class="imgcontainer">
-              <!-- Gambar avatar dalam modal -->
-              <img
-                src="image/Foto Bok-Su game Married In Red.jpg"
-                alt="Avatar"
-                class="avatar"
-              />
-            </div>
+        <!-- header form -->
+        <h2 class="headerForm">Selamat datang kembali!</h2>
 
-            <!-- Container untuk input username dan password -->
-            <div class="container">
-              <!-- Label untuk username -->
-              <label for="uname"><b>Username</b></label>
-              <!-- Input teks untuk username -->
-              <input
-                type="text"
-                placeholder="Enter Username"
-                name="uname"
-                required
-              />
+        <!-- Form login -->
+        <form class="modal-content animate" action="project1.html">
+          <!-- Container untuk input email dan sandi -->
+          <div class="container">
+            <!-- Label untuk username -->
+            <label for="uname"><b>Email</b></label>
+            <!-- Input teks untuk username -->
+            <input
+              type="text"
+              placeholder="Masukkan email anda"
+              name="uname"
+              required
+            />
 
-              <!-- Label untuk password -->
-              <label for="psw"><b>Password</b></label>
-              <!-- Input password -->
-              <input
-                type="password"
-                placeholder="Enter Password"
-                name="psw"
-                required
-              />
-
-              <!-- Tombol untuk submit form (login) -->
-              <button type="submit" class="tombol-login">Login</button>
+            <!-- Label untuk password -->
+            <label for="psw"><b>Sandi</b></label>
+            <!-- Input password -->
+            <input
+              type="password"
+              placeholder="Masukkan sandi anda"
+              name="psw"
+              required
+            />
+            
+            <!-- div untuk checkbox dan text lupaKataSandi dan button login -->
+            <div class="underLoginContainer1">
               <!-- Checkbox untuk mengingat username/password -->
               <label>
                 <input type="checkbox" checked="checked" name="remember" />
-                Remember me
+                Ingat saya
               </label>
 
-              <!-- Teks dan tautan untuk lupa password -->
-              <span class="psw">Forgot <a href="#" class="link-lupa-password">password?</a></span>
+              <label>
+                <!-- container -->
+                <div class="div-txt-UnderLogin-button">
+                  <!-- Teks dan tautan untuk lupa password -->
+                  <span class="psw"
+                    >Lupa kata
+                    <a href="#" class="link-lupa-password">kata sandi?</a></span
+                  >
+                  <!-- Tombol untuk submit form (login) -->
+                  <button type="submit" class="tombol-login">Masuk</button>
+                </div>
+              </label>
             </div>
 
-            <!-- Container untuk tombol cancel dan opsi lupa password -->
-            <div class="container">
-              <!-- teks untuk pindah ke form signup --> 
-              <span class="cac">Don't have an account yet? <a href="register.html" class="link-lupa-password">Create an Account</a></span>
+            <!-- on working teks atau -->
+            <div class="orContinueWith">
+              <span>Atau Lanjutkan Dengan</span>
             </div>
-          </form>
-        </div>
+
+            <!-- for social media icon -->
+            <div class="socialMediaIcons">
+              <!-- on working icon -->
+              <a href="#" class="google btn"><i class="fa fa-google"> </i> </a>
+
+              <!-- on working icon -->
+              <a href="#" class="whatsapp btn">
+                <i class="fa fa-whatsapp"></i
+              ></a>
+
+              <!-- on working icon -->
+              <a href="#" class="facebook btn"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </div>
+
+            <!-- Container untuk tombol butuh akun -->
+            <div class="butuhAkunContainer">
+              <!-- teks untuk pindah ke form signup -->
+              <span class="butuhAkun"
+                >Butuh Akun?
+                </span
+              >
+              <div class="buatAkunButtonDiv">
+                <button class="buatAkunButton"><a href="register.html" class="link-buat-akun">Buat Akun</a></button>  
+              </div> 
+            </div>
+
+            
+          </div>
+        </form>
       </section>
     </main>
 
