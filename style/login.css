@@ -82,6 +82,7 @@ img.avatar {
 
 /* Padding di dalam kontainer */
 .container {
+  margin: auto;
   padding-left: 16px;
   padding-right: 16px;
   /* padding */
@@ -166,8 +167,6 @@ span.aha {
   width: 80%;
   /* Lebar 80% dari layar */
 }
-
-
 
 /* Menambahkan animasi zoom ke modal */
 .animate {
@@ -312,4 +311,14 @@ input {
 
 .privacyText {
   text-align: center;
+}
+
+.div-signup-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div-ingatSaya-Signup {
+  display: flex;
+  justify-content: space-between;
 }

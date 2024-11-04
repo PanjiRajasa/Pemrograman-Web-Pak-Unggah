@@ -17,7 +17,10 @@
     />
 
     <!-- import icon css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <main>
@@ -25,61 +28,86 @@
         <!-- Judul -->
         <h1 class="judul-form-login">Kotlin Group Web</h1>
 
-        <!-- header form -->
-        <h2 class="headerForm">Mohon isi formulir dibawah ini</h2>
+        <!-- Form login -->
+        <form class="modal-content animate" action="project1.html">
+          <!-- Container untuk input username dan password -->
+          <div class="container">
 
-          <!-- Form login -->
-          <form class="modal-content animate" action="project1.html">
+            <!-- label untuk email -->
+            <label for="email"><b>Email</b></label>
+            <!-- input email -->
+            <input
+              type="email"
+              id="phone"
+              name="phone"
+              placeholder="Masukkan email anda"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              minlength="5"
+              maxlength="50"
+              required
+            />
 
-            <!-- Container untuk input username dan password -->
-            <div class="container">
-              <!-- Label untuk username -->
-              <label for="uname"><b>Username</b></label>
-              <!-- Input teks untuk username -->
-              <input
-                type="text"
-                placeholder="Enter Username"
-                name="uname"
-                required
-              />
+            <!-- Label untuk password -->
+            <label for="psw"><b>Sandi</b></label>
+            <!-- Input password -->
+            <input
+              type="password"
+              placeholder="Masukkan sandi anda"
+              name="psw"
+              required
+            />
 
-              <!-- label untuk email -->
-              <label for="email"><b>Email:</b></label>
-              <!-- input email -->
-              <input type="email" id="phone" name="phone" placeholder="Enter your email" 
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
-              minlength="5" maxlength="50"
-              required>
+            <!-- label untuk confir password -->
+            <label for="psw-repeat"><b>Konfirmasi sandi</b></label>
+            <!-- input password -->
+            <input
+              type="password"
+              placeholder="Konfirmasi sandi anda"
+              name="psw-repeat"
+              required
+            />
 
-              <!-- Label untuk password -->
-              <label for="psw"><b>Password</b></label>
-              <!-- Input password -->
-              <input
-                type="password"
-                placeholder="Enter Password"
-                name="psw"
-                required
-              />
-                
-              <!-- label untuk confir password -->
-              <label for="psw-repeat"><b>Confirm Password</b></label>
-              <!-- input password -->
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-              <!-- Tombol untuk submit form (login) -->
-              <button type="submit" class="tombol-login">Sign Up</button>
+            <div class="div-ingatSaya-Signup">
               <!-- Checkbox untuk mengingat username/password -->
               <label>
                 <input type="checkbox" checked="checked" name="remember" />
-                Remember me
+                Ingat saya
               </label>
 
-              <!-- paragraf minta persetujuan user -->
-              <p>By creating an account you agree to our <a href="#" class="link-terms-privacy">Terms & Privacy</a>.</p>
-              <span class="aha">Already have an account? <a href="login.html" class="link-lupa-password">Login</a></span>
+              <div class="div-signup-button">
+                <!-- Tombol untuk submit form (login) -->
+                <button type="submit" class="tombol-login">Sign Up</button>
+              </div>
             </div>
-          </form>
-        </div>
+
+            <!-- on working teks atau -->
+            <div class="orContinueWith">
+              <span>Atau Lanjutkan Dengan</span>
+            </div>
+
+            <!-- for social media icon -->
+            <div class="socialMediaIcons">
+              <!-- Icon -->
+              <a href="#" class="google btn"><i class="fa fa-google"> </i> </a>
+
+              <!-- Icon -->
+              <a href="#" class="whatsapp btn">
+                <i class="fa fa-whatsapp"></i
+              ></a>
+            </div>
+
+            <!-- Tidak punya akun? -->
+            <span class="aha">Sudah punya akun? <a href="login.html" class="link-lupa-password">Masuk</a></span>
+
+            <!-- paragraf minta persetujuan user -->
+            <p class="privacyText">
+              Dengan melanjutkan, Anda menunjukkan bahwa Anda menyetujui
+              <a href="#" class="link-lupa-password">Persyaratan Layanan</a> dan
+              <a href="#" class="link-lupa-password">Kebijakan Privasi</a>
+              Kotlin Group Web
+            </p>
+          </div>
+        </form>
       </section>
     </main>
 
