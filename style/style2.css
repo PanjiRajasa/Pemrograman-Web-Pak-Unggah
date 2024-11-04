@@ -1,10 +1,10 @@
 /* CSS custom properties */
 :root {
-    --warna-gradasi-button: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
-    --warna-gradasi-button-hover: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
+    --warna-gradasi-button: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    --warna-gradasi-button-hover: linear-gradient(90deg, rgba(137, 137, 255, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
     --warna-gradasi-buttonLihatFaktaUnik-hover: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
     --warna-primary-background: #ffffff;
-    --warna-secondary-background: #1f2126;
+    --warna-secondary-background: #EEEEEE;
 }
 
 /* Aturan umum untuk elemen-elemen */
@@ -181,11 +181,13 @@
     padding: 15px 32px;
     border-radius: 20px;
     border: none;
+    background-color: rgb(179, 139, 139);
+    color: white;
 }
 
 .lihat-ceritaku1:hover,
 .lihat-ceritaku2:hover,
 .lihat-ceritaku3:hover {
-    background-color: rgb(193, 179, 179);
+    background-color: rgb(176, 148, 148); 
     color: white;
 }

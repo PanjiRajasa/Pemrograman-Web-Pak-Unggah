@@ -1,10 +1,10 @@
 /* CSS custom properties */
 :root {
     --warna-gradasi-button: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
-    --warna-gradasi-button-hover: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
+    --warna-gradasi-button-hover: linear-gradient(90deg, rgba(137, 137, 255, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
     --warna-gradasi-buttonLihatFaktaUnik-hover: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
     --warna-primary-background: #ffffff;
-    --warna-secondary-background: #1f2126;
+    --warna-secondary-background: #EEEEEE;
 }
 
 /* Reset dan gaya dasar untuk perangkat mobile */
@@ -21,8 +21,6 @@
 body {
     margin: 0;
     background-color: var(--warna-primary-background);
-    /* Latar belakang gelap */
-    color: #e0e0e0;
     /* Teks berwarna terang */
     font-family: Arial, sans-serif;
 }
@@ -34,56 +32,50 @@ body {
     padding-bottom: 10px;
 }
 
+h1,h2 {
+    color: #000;
+}
+
 /* Heading */
 h1 {
-    color: rgb(255, 255, 255);
+   
     /* Warna teks putih */
     text-align: center;
     font-weight: 900;
-    background-color: #1f2126;
-    /* Latar belakang hitam */
+    background-color: var(--warna-secondary-background);
     padding: 1rem;
     font-size: 2rem;
-    /* Menambahkan padding untuk meningkatkan keterbacaan */
-    text-shadow: 2px 2px 2px #bb86fc;
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+
     /* Warna teks putih */
     text-align: center;
     font-weight: 900;
-    background-color: #1f2126;
+    background-color: var(--warna-secondary-background);
     /* Latar belakang hitam */
     padding: 1rem;
     font-size: 1.5rem;
     /* Menambahkan padding untuk meningkatkan keterbacaan */
-    text-shadow: 2px 2px 2px #bb86fc;
 }
 
 .h-2-fakta-unik {
-    color: rgb(255, 255, 255);
     /* Warna teks putih */
     text-align: center;
     font-weight: 900;
-    background-color: #1f2126;
+    background-color: var(--warna-secondary-background);
     /* Latar belakang hitam */
     padding: 1rem;
-    /* Menambahkan padding untuk meningkatkan keterbacaan */
-    text-shadow: 2px 2px 2px #bb86fc;
 }
 
 
 .p_tile_instagram {
-    color: rgb(255, 255, 255);
-    /* Warna teks putih */
+    
     text-align: center;
     font-weight: 900;
     font-size: 1.2rem;
-    /* Latar belakang hitam */
     padding: 1rem;
     /* Menambahkan padding untuk meningkatkan keterbacaan */
-    text-shadow: 1px 1px 2px #bb86fc;
 }
 
 /* Tabel */
@@ -148,9 +140,8 @@ img {
     font-size: 14px;
     background: rgb(2, 0, 36);
     background: var(--warna-gradasi-button);
-    /* Warna latar belakang tombol gelap */
     color: #ffffff;
-    /* Warna teks terang */
+    border: 1px solid #333;
     transition-duration: 0.4s;
     border-radius: 20px;
     cursor: pointer;
@@ -163,9 +154,9 @@ img {
 
 /* Table Holder */
 .table-holder {
-    background-color: #28282a;
+    background-color: var(--warna-secondary-background);
     /* Latar belakang tabel gelap */
-    border: 2px solid #333;
+    border: 1px solid #333;
     /* Warna border tabel */
     border-radius: 20px;
     padding: 10px;
@@ -198,24 +189,18 @@ img {
 }
 
 .table-holder th {
-    background-color: #333;
-    /* Latar belakang header tabel gelap */
-    color: #e0e0e0;
-    /* Teks header tabel terang */
+    background-color: var(--warna-secondary-background);
     text-align: center;
 }
 
 .table-holder td {
-    background-color: #1e1e1e;
-    /* Latar belakang sel tabel gelap */
+    background-color: lightgray;
+    color: black;
 }
 
 /* Instagram Link Holder */
 .instagram-link-holder {
-    background-color: #28282a;
-    /* Latar belakang link holder gelap */
-    border: 2px solid #333;
-    /* Warna border link holder */
+    background-color: var(--warna-secondary-background);
     border-radius: 20px;
     padding: 10px;
     /* Padding untuk mobile */
@@ -261,10 +246,7 @@ img {
 }
 
 .paragraphDisplayerClass {
-    background-color: #333;
-    /* Latar belakang paragraf gelap */
-    color: #e0e0e0;
-    /* Teks paragraf terang */
+    background-color: #d3d6ab;
     padding: 10px;
     width: 380px;
     border-radius: 20px;

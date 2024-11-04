@@ -4,7 +4,7 @@
   --warna-gradasi-button-hover: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(137, 137, 255, 1) 29%, rgba(102, 255, 255, 1) 100%);
   --warna-gradasi-buttonLihatFaktaUnik-hover: linear-gradient(90deg, rgba(137, 137, 255, 1) 29%, rgb(152, 240, 240) 100%);
   --warna-primary-background: #FFFFFF;
-  --warna-secondary-background: #1f2126;
+  --warna-secondary-background: #EEEEEE ;
 }
 
 
@@ -13,7 +13,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: var(--warna-primary-background);
-  color: #e0e0e0;
   font-family: Arial, sans-serif;
 }
 
@@ -194,13 +193,11 @@ span.aha {
 
 /* untuk judul form login */
 .judul-form-login {
-  color: rgb(255, 255, 255);
   background: var(--warna-secondary-background);
   text-align: center;
   font-weight: 900;
   padding: 1rem;
   font-size: 2rem;
-  text-shadow: 2px 2px 2px #bb86fc;
 }
 
 /* untuk header */
@@ -226,8 +223,7 @@ span.aha {
 .link-lupa-password {
   text-decoration: underline;
   /* text decoration */
-  color: white;
-  /* warna text */
+  color: black;
 }
 
 .link-buat-akun {
@@ -245,15 +241,11 @@ span.aha {
 
 /* on working for login social media icon */
 .google {
-  color: white;
+  color: black;
 }
 
 .whatsapp {
-  color: white;
-}
-
-.facebook {
-  color: white;
+  color: black;
 }
 
 input {
