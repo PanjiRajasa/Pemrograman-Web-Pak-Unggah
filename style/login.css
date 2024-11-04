@@ -314,3 +314,85 @@ input {
   display: flex;
   justify-content: space-between;
 }
+
+/* Untuk responsive */
+/* Responsif untuk layar kecil hingga sedang */
+@media screen and (max-width: 768px) {
+  /* Mengurangi padding dan ukuran font untuk layar lebih kecil */
+  .container, .modal-content {
+    width: 90%;
+    padding: 16px;
+  }
+  
+  .judul-form-login, .headerForm {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+  
+  .tombol-login {
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+  }
+  
+  .buatAkunButton {
+    width: 75%;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  /* Mengurangi jarak antara ikon media sosial */
+  .socialMediaIcons {
+    font-size: 1.5rem;
+    column-gap: 1.5rem;
+  }
+}
+
+/* Responsif untuk layar sangat kecil */
+@media screen and (max-width: 480px) {
+  .judul-form-login, .headerForm {
+    font-size: 1.25rem;
+  }
+  
+  /* Membuat tombol dan input lebih kecil dan rapat */
+  input[type=text], input[type=password], input[type=tel], input[type=email] {
+    padding: 10px 15px;
+  }
+  
+  .tombol-login, .buatAkunButton {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Atur ulang elemen agar lebih ringkas */
+  .orContinueWith {
+    flex-direction: column;
+  }
+  
+  /* Ubah posisi div dan pengaturan margin untuk layout lebih sempit */
+  .butuhAkunContainer, .privacyText {
+    padding: 10px;
+  }
+  
+  /* Atur ukuran modal untuk layar lebih kecil */
+  .modal-content {
+    width: 95%;
+    margin: 0;
+  }
+}
+
+/* Responsif untuk tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .judul-form-login, .headerForm {
+    font-size: 1.75rem;
+  }
+
+  .tombol-login, .buatAkunButton {
+    padding: 0.5rem 4rem;
+  }
+
+  .socialMediaIcons {
+    font-size: 1.75rem;
+    column-gap: 2rem;
+  }
+}
+
+/* Untuk responsive */
