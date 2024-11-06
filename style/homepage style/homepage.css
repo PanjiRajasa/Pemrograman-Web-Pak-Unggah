@@ -18,82 +18,87 @@
 
 /* CSS hero section start */
 
-.hero {
+.hero-container {
     display: flex;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    background-size: cover; /* Gambar akan menyesuaikan dengan container */
+    background-image: linear-gradient(to right, #000f46, #000f46, #000f46, #000f46, #000f46, #1d1f54, #323062, #464271, #726d93, #9f9bb6, #ceccda, #ffffff);
+}
+
+/* Gambar Logo */
+.hero-container img {
+    width: 10%; /* Gambar akan mengikuti lebar container */
+    max-width: 300px; /* Gambar tidak akan lebih besar dari 300px (bisa disesuaikan) */
+    height: auto; /* Agar proporsi gambar tetap terjaga */
+    object-fit: contain; /* Pastikan gambar tetap terlihat utuh */
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 768px) {
+    .hero-container img {
+        max-width: 200px; /* Sesuaikan ukuran gambar saat layar lebih kecil */
+    }
+}
+
+/* Media query untuk ukuran layar di bawah 768px */
+@media (max-width: 768px) {
+    .hero-container {
+        padding-left: 8px; /* Sesuaikan padding kiri pada layar yang lebih kecil */
+        width: auto; /* Sesuaikan lebar agar lebih fleksibel di layar kecil */ 
+    }  
+}
+
+
+.hero {
+    display: block;
     flex-direction: column;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 8px;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    max-width: 50%;
+    tab-size: 4;
+    unicode-bidi: isolate;
+}
+
+.hero h1 {
+    font-size: 72px;
+    font-weight: 310;
+    letter-spacing: -1.62px;
+    line-height: 79.2px;
+    color: white;
+    text-size-adjust: 100%;
+}
+
+.hero p {
+    color: white;
+    font-size: 18px;
+}
+
+/* Media query untuk layar kecil (di bawah 768px) */
+@media (max-width: 768px) {
+    /* Gambar */
+    .hero-container img {
+        max-width: 200px; /* Sesuaikan ukuran gambar saat layar lebih kecil */
+    }
+
+    /* Teks */
+    .hero h1 {
+        font-size: 48px; /* Ukuran font untuk h1 lebih kecil */
+        line-height: 56px; /* Menyesuaikan line height */
+    }
+
+    .hero p {
+        font-size: 14px; /* Ukuran font untuk paragraph lebih kecil */
+    }
 }
 
 /* CSS hero section end */
 
-/* style di konsentrasi keahlian start */
-
-.konsentrasi-keahlian-container {
-    padding-top: 8px;
-    text-align: center;
-}
-
-/* style di konsentrasi keahlian end */
-
-/* style gambar konsentrasi keahlian dan cardnya juga start */
-
-.zoom:hover {
-    animation: zoom-in 1s forwards;
-}
-
-@keyframes zoom-in {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(0.9);
-    }
-}
-
-.root-container-konsentrasi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gambar-konsentrasi-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    column-gap: 8px;
-    padding-top: 12px;
-    max-width: 1000px;
-}
-
-.gambar-konsentrasi-card img {
-    width: 100%; /* Sesuaikan dengan container */
-    max-width: 350px; /* Maksimal lebar tetap 350px */
-}
-
-/* Media Query untuk layar kecil (di bawah 768px) */
-@media (max-width: 768px) {
-    .gambar-konsentrasi-container {
-        grid-template-columns: 1fr; /* Ubah menjadi satu kolom */
-        row-gap: 8px; /* Tambahkan jarak antar-baris */
-        padding: 8px; /* Sesuaikan padding */
-    }
-
-    .gambar-konsentrasi-card img {
-        max-width: 100%; /* Gambar mengikuti lebar container */
-    }
-}
-
-/* Media Query untuk layar sangat kecil (di bawah 480px) */
-@media (max-width: 480px) {
-    .gambar-konsentrasi-container {
-        padding: 4px; /* Kurangi padding */
-    }
-}
-
-/* style gambar konsentrasi keahlian dan cardnya juga end */ 
 
 /* style untuk alamat dan kontak start */
 
@@ -123,7 +128,8 @@
 .contact-item {
     flex: 1;
     padding: 15px;
-    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 12px 7px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Border tipis */
     border-radius: 8px;
     background-color: #f8f8f8;
 }

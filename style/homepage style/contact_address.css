@@ -1,0 +1,10 @@
+/* untuk contact-item start */
+
+.contact-item:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi untuk interaksi hover */
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.15); /* Perbesar bayangan saat hover */
+    border-color: rgba(0, 0, 0, 0.2); /* Ubah warna border saat hover */
+    animation: zoom-in 1s forwards;
+}
+
+/* untuk contact-item end */
