@@ -36,3 +36,120 @@
 }
 
 /* style di konsentrasi keahlian end */
+
+/* style gambar konsentrasi keahlian dan cardnya juga start */
+
+.zoom:hover {
+    animation: zoom-in 1s forwards;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.9);
+    }
+}
+
+.root-container-konsentrasi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gambar-konsentrasi-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    column-gap: 8px;
+    padding-top: 12px;
+    max-width: 1000px;
+}
+
+.gambar-konsentrasi-card img {
+    width: 100%; /* Sesuaikan dengan container */
+    max-width: 350px; /* Maksimal lebar tetap 350px */
+}
+
+/* Media Query untuk layar kecil (di bawah 768px) */
+@media (max-width: 768px) {
+    .gambar-konsentrasi-container {
+        grid-template-columns: 1fr; /* Ubah menjadi satu kolom */
+        row-gap: 8px; /* Tambahkan jarak antar-baris */
+        padding: 8px; /* Sesuaikan padding */
+    }
+
+    .gambar-konsentrasi-card img {
+        max-width: 100%; /* Gambar mengikuti lebar container */
+    }
+}
+
+/* Media Query untuk layar sangat kecil (di bawah 480px) */
+@media (max-width: 480px) {
+    .gambar-konsentrasi-container {
+        padding: 4px; /* Kurangi padding */
+    }
+}
+
+/* style gambar konsentrasi keahlian dan cardnya juga end */ 
+
+/* style untuk alamat dan kontak start */
+
+/* Basic Styling */
+
+.title-social-media-skensa {
+    text-align: center;
+}
+
+.contact-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-section h2 {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Agar konten menyesuaikan pada layar kecil */
+}
+
+.contact-item {
+    flex: 1;
+    padding: 15px;
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f8f8f8;
+}
+
+/* Map Section */
+.map-container {
+    min-width: 300px;
+    min-height: 300px;
+    flex: 2;
+}
+
+/* Social Media Info */
+.info-container,
+.detail-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* style untuk alamat dan kontak end */
