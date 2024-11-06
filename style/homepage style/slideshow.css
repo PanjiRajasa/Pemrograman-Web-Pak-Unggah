@@ -1,0 +1,70 @@
+/* CSS slideshow  start*/
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slide {
+    display: none;
+    position: relative;
+    padding: 0  ;
+}
+
+.slide img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+.prev {left: 3rem;}
+.next {right: 3rem;}
+
+/* animation fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* @keyframe */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* CSS slideshow end*/

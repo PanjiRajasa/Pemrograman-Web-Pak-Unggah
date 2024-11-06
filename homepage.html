@@ -9,8 +9,14 @@
       type="image/x-icon"
       href="image/Foto Bok-Su game Married In Red.jpg"
     />
+
+    <!-- link css -->
     <link rel="stylesheet" href="style/homepage style/homepage.css">
     <link rel="stylesheet" href="style/homepage style/general.css">
+    <link rel="stylesheet" href="style/homepage style/slideshow.css">
+    <link rel="stylesheet" href="style/homepage style/navbar.css">
+    <!-- link css -->
+
     <!-- link font open sans start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,25 +36,28 @@
 
     <div class="slideshow-container">
         <div class="slide fade" id="slide1">
-            <img src="image/skensa-tampak-depan.jpg" alt="Gambar 1">
+            <img src="image/skensa-tampak-depan.jpg" alt="Gambar 1" onclick="plusSlides()">
+            <p class="gambar-skensa-p">Gambar SMKN 1 Denpasar</p>
         </div>
             
         <div class="slide fade" id="slide2">
-            <img src="image/business-room-skensa.jpg" alt="Gambar 2">
+            <img src="image/business-room-skensa.jpg" alt="Gambar 2" onclick="plusSlides()">
+            <p class="gambar-ruang-business-p">Gambar Ruangan Student Business Room</p>
         </div>
 
         <div class="slide fade" id="slide3">
-            <img src="image/lab-rpl-skensa.jpg" alt="Gambar 3">
+            <img src="image/lab-rpl-skensa.jpg" alt="Gambar 3" onclick="plusSlides()">
+            <p class="gambar-ruang-lab-rpl-p">Gambar Ruang Lab RPL</p>
         </div>
         <a href="#" class="prev" onclick="minusSlides()">&#10094;</a>
         <a href="#" class="next" onclick="plusSlides()">&#10095;</a>
     </div>
 
-    <!-- <div class="dot-container">
-        <span class="dot" onclick=""></span>
-        <span class="dot" onclick=""></span>
-        <span class="dot" onclick=""></span>
-    </div> -->
+    <div class="dot-container">
+        <span class="dot" id="dot1"></span>
+        <span class="dot" id="dot2"></span>
+        <span class="dot" id="dot3"></span>
+    </div>
 
 
     <script type="text/javascript" src="script/homepage script/slideShow.js"></script>

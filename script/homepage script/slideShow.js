@@ -2,9 +2,19 @@ let notTouched1 = true;
 let notTouched2 = true;
 let notTouched3 = true;
 let slideCounter = 1;
+
+//untuk slide gambar
 const slide1 = document.getElementById("slide1");
 const slide2 = document.getElementById("slide2");
 const slide3 = document.getElementById("slide3");
+
+//untuk dot
+const dot1 = document.getElementById("dot1");
+const dot2 = document.getElementById("dot2");
+const dot3 = document.getElementById("dot3");
+let isDotClicked1 = false;
+let isDotClicked2 = false;
+let isDotClicked3 = false;
 
 function showSlide(counter) {
     // Sembunyikan semua slide
@@ -44,3 +54,32 @@ function minusSlides() {
 
     //console.log(slideCounter);
 }
+
+//function if dot get clicked
+dot1.addEventListener("click", function() {
+    isDotClicked1 = true;
+
+    if(isDotClicked1) {
+        slideCounter = 1;
+        showSlide(slideCounter);
+    }
+});
+
+dot2.addEventListener("click", function() {
+    isDotClicked2 = true;
+
+    if(isDotClicked2) {
+        slideCounter = 2;
+        showSlide(slideCounter);
+    }
+});
+
+dot3.addEventListener("click", function() {
+    isDotClicked3 = true;
+
+    if(isDotClicked3) {
+        slideCounter = 3;
+        showSlide(slideCounter);
+    }
+    
+});
