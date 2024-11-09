@@ -25,6 +25,7 @@
     position: absolute;
     top: 50%;
     background-color: rgba(0,0,0,0.2);
+    border-style: none;
     color: white;
     padding: 16px;
     font-size: 18px;
@@ -48,25 +49,6 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-}
-
-.dot-container {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-.active, .dot:hover {
-    background-color: #717171;
 }
 
 /* menghilangkan  */

@@ -1,85 +1,62 @@
-let notTouched1 = true;
-let notTouched2 = true;
-let notTouched3 = true;
-let slideCounter = 1;
+window.onload = function() {
+    //nampilin gambar 1
+    document.getElementById("slide1").style.display = "block";
 
-//untuk slide gambar
-const slide1 = document.getElementById("slide1");
-const slide2 = document.getElementById("slide2");
-const slide3 = document.getElementById("slide3");
+    //manggil class Slider
+    //selalu update parameternya setiap kali nambah slide baru
+    const slider = new Slider(7); //masukin total slide di html ke parameternya
 
-//untuk dot
-const dot1 = document.getElementById("dot1");
-const dot2 = document.getElementById("dot2");
-const dot3 = document.getElementById("dot3");
-let isDotClicked1 = false;
-let isDotClicked2 = false;
-let isDotClicked3 = false;
+    //masukin method class kedalam a
+    document.getElementById("next").onclick = () => slider.nextSlide(); //untuk next
+    document.getElementById("prev").onclick = () => slider.prevSlide(); //untuk prev
 
-function showSlide(counter) {
-    // Sembunyikan semua slide
-    slide1.style.display = "none";
-    slide2.style.display = "none";
-    slide3.style.display = "none";
-    
-    // Tampilkan slide berdasarkan nilai counter dan kondisi notTouched
-    if (counter === 1 && notTouched1) {
-        slide1.style.display = "block";
-    } else if (counter === 2 && notTouched2) {
-        slide2.style.display = "block";
-    } else if (counter === 3 && notTouched3) {
-        slide3.style.display = "block";
-    }
 }
 
-// Tampilkan slide awal
-showSlide(slideCounter);
-
-function plusSlides() {
-    slideCounter++;
-    if (slideCounter == 4) {
-        slideCounter = 1; // kembali ke slide 1 jika lebih dari 3
+class Slider {
+    constructor(totalSlides) {
+        this.currentSlide = 1;
+        this.totalSlide = totalSlides;
     }
-    showSlide(slideCounter);
 
-    //console.log(slideCounter);
+    // Method untuk pindah ke slide berikutnya
+    nextSlide() {
+        const currentElement = document.getElementById(`slide${this.currentSlide}`);
+        
+        // Pastikan elemen saat ini ada
+        if (currentElement) {
+            // Sembunyikan slide saat ini
+            currentElement.style.display = "none";
+
+            // Update slide ke berikutnya, kembali ke slide pertama jika sudah di slide terakhir
+            this.currentSlide = this.currentSlide < this.totalSlide ? this.currentSlide + 1 : 1;
+
+            const nextElement = document.getElementById(`slide${this.currentSlide}`);
+            
+            // Tampilkan slide baru jika elemen tersebut ada
+            if (nextElement) {
+                nextElement.style.display = "block";
+            }
+        }
+    }
+
+    // Method untuk kembali ke slide sebelumnya
+    prevSlide() {
+        const currentElement = document.getElementById(`slide${this.currentSlide}`);
+        
+        // Pastikan elemen saat ini ada
+        if (currentElement) {
+            // Sembunyikan slide saat ini
+            currentElement.style.display = "none";
+
+            // Update slide ke sebelumnya, kembali ke slide terakhir jika di slide pertama
+            this.currentSlide = this.currentSlide > 1 ? this.currentSlide - 1 : this.totalSlide;
+
+            const prevElement = document.getElementById(`slide${this.currentSlide}`);
+            
+            // Tampilkan slide baru jika elemen tersebut ada
+            if (prevElement) {
+                prevElement.style.display = "block";
+            }
+        }
+    }
 }
-
-function minusSlides() {
-    slideCounter--;
-    if (slideCounter == 0) {
-        slideCounter = 3; // kembali ke slide terakhir jika kurang dari 1
-    }
-    showSlide(slideCounter);
-
-    //console.log(slideCounter);
-}
-
-//function if dot get clicked
-dot1.addEventListener("click", function() {
-    isDotClicked1 = true;
-
-    if(isDotClicked1) {
-        slideCounter = 1;
-        showSlide(slideCounter);
-    }
-});
-
-dot2.addEventListener("click", function() {
-    isDotClicked2 = true;
-
-    if(isDotClicked2) {
-        slideCounter = 2;
-        showSlide(slideCounter);
-    }
-});
-
-dot3.addEventListener("click", function() {
-    isDotClicked3 = true;
-
-    if(isDotClicked3) {
-        slideCounter = 3;
-        showSlide(slideCounter);
-    }
-    
-});

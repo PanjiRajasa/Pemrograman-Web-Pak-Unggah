@@ -1,0 +1,14 @@
+.flex-container-visi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.flex-container-visi > div {
+    margin: 10px;
+    text-align: center;
+    font-size: calc(18/ 16*1rem);
+}
