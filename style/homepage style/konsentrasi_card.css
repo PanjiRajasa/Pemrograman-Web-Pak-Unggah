@@ -29,6 +29,8 @@
 /* hover pada card */
 .gambar-konsentrasi-card:hover {
     box-shadow: 7px 7px 0px rgba(255, 255, 255, 0.1); /* Tambahkan bayangan pada card */
+    /* cursor */
+    cursor: pointer;
 }
 
 /* untuk desain card konsentrasi keahlian start */

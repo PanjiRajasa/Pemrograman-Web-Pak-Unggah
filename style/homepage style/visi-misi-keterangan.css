@@ -6,7 +6,7 @@
     margin-bottom: 8rem;
 }
 
-.flex-container-visi, .flex-container-misi {
+.flex-container-visi, .flex-container-misi, .flex-container-tujuan-sekolah {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     font-size: calc(18/ 16*1rem);
 }
 
-.flex-container-misi {
+.flex-container-misi, .flex-container-tujuan-sekolah {
     text-align: left;
     padding: 10px;
 }
