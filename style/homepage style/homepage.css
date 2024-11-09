@@ -26,31 +26,29 @@
     padding-bottom: 12px;
     background-size: cover; /* Gambar akan menyesuaikan dengan container */
     background-image: linear-gradient(to right, #000f46, #000f46, #000f46, #000f46, #000f46, #1d1f54, #323062, #464271, #726d93, #9f9bb6, #ceccda, #ffffff);
+    align-items: center;
 }
 
 /* Gambar Logo */
 .hero-container img {
-    width: 10%; /* Gambar akan mengikuti lebar container */
+    width: 30%; /* Gambar akan mengikuti lebar container */
     max-width: 300px; /* Gambar tidak akan lebih besar dari 300px (bisa disesuaikan) */
     height: auto; /* Agar proporsi gambar tetap terjaga */
     object-fit: contain; /* Pastikan gambar tetap terlihat utuh */
 }
 
-/* Media query untuk layar kecil */
-@media (max-width: 768px) {
-    .hero-container img {
-        max-width: 200px; /* Sesuaikan ukuran gambar saat layar lebih kecil */
-    }
-}
-
 /* Media query untuk ukuran layar di bawah 768px */
 @media (max-width: 768px) {
     .hero-container {
+        flex-direction: column;
         padding-left: 8px; /* Sesuaikan padding kiri pada layar yang lebih kecil */
         width: auto; /* Sesuaikan lebar agar lebih fleksibel di layar kecil */ 
     }  
-}
 
+    .hero-container p,h1 {
+        text-align: center;
+    }
+}
 
 .hero {
     display: block;
@@ -77,24 +75,6 @@
 .hero p {
     color: white;
     font-size: 18px;
-}
-
-/* Media query untuk layar kecil (di bawah 768px) */
-@media (max-width: 768px) {
-    /* Gambar */
-    .hero-container img {
-        max-width: 200px; /* Sesuaikan ukuran gambar saat layar lebih kecil */
-    }
-
-    /* Teks */
-    .hero h1 {
-        font-size: 48px; /* Ukuran font untuk h1 lebih kecil */
-        line-height: 56px; /* Menyesuaikan line height */
-    }
-
-    .hero p {
-        font-size: 14px; /* Ukuran font untuk paragraph lebih kecil */
-    }
 }
 
 /* CSS hero section end */
