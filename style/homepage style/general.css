@@ -15,3 +15,14 @@ img {
 ol {
     list-style-position: inside;
 }
+
+/* untuk pengganti <br /> karena <br /> itu tidak semantik, maka digantikan dengan margin-bottom atau margin-top */
+.line-break-bottom {
+    margin-bottom: 20px;
+}
+
+.line-break-top {
+    margin-bottom: 20px;
+}
+
+/* line break style end */
