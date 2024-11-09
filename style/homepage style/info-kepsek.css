@@ -1,5 +1,81 @@
 /* style untuk info kepsek section start */
 
+.section-info-kepsek {
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+}
 
+.info-kepsek-container, .quote-kepsek-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+    margin: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 708px) {
+    .info-kepsek-container {
+        flex-direction: column;
+    }
+}
+
+.info-kepsek-container > div {
+    text-align: center;
+    padding: 10px;
+}
+
+.img-kepsek-container > img {
+    max-width: 50%;
+    border-radius: 4px;
+    padding: 4px;
+    border: 1px solid #ddd;
+    height: auto;
+}
+
+.img-kepsek-container-circled > img {
+    max-width: 40%;
+    border-radius: 100px;
+    padding: 4px;
+    border: 1px solid #ddd;
+    height: auto;
+}
+
+.img-kepsek-container > p {
+    text-align: center;
+}
+
+.kepsek-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.h3-kepsek-title, .quote-kepsek-title {
+    background-color: var(--col-bg-tertiary);
+}
+
+.h3-nama-kepsek {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.h4-nama-kepsek {
+    font-weight: 500;
+}
+
+.q-kepsek {
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p-quote-kepsek {
+    padding: 12px;
+}
 
 /* style untuk info kepsek section end */

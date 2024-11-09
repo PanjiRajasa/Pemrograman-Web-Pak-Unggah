@@ -2,6 +2,7 @@
 :root {
     --col-bg-primary-o-90: #000f46e6;
     --col-bg-secondary: rgb(64 75 116);
+    --col-bg-tertiary: #EEEEEE;
 }
 /* root css property end */
 
@@ -24,6 +25,7 @@ ol {
 }
 
 /* untuk pengganti <br /> karena <br /> itu tidak semantik, maka digantikan dengan margin-bottom atau margin-top */
+
 .line-break-bottom {
     margin-bottom: 20px;
 }

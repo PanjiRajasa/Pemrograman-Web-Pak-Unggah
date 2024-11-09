@@ -32,20 +32,27 @@
     padding: 10px;
 }
 
-.divider {
+.divider-text {
     font-size: 30px;
     padding-bottom: 8px;
     padding-top: 8px;
     display: flex;
     align-items: center;
-  }
+}
   
-  .divider::before, .divider::after {
+.divider-text::before, .divider-text::after {
     flex: 1;
     content: '';
     padding: 3px;
     background-color: rgba(0, 0, 0, 0.1);
     margin: 5px 2rem;
-  }
+}
+
+.divider-line {
+    border-top: 3px solid #bbb;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
 
 /* style visi misi end */
