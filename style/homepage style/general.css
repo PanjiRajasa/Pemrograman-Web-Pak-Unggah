@@ -11,3 +11,7 @@ h2 {
 img {
     border-radius: 4px;
 }
+
+ol {
+    list-style-position: inside;
+}
