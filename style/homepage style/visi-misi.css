@@ -1,14 +1,51 @@
-.flex-container-visi {
+/* style visi misi start */
+
+.section-visi-misi {
+    margin: 1rem;
+    /* jarak */
+    margin-bottom: 8rem;
+}
+
+.flex-container-visi, .flex-container-misi {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* padding */
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    position: relative;
+    margin: auto;
+
+    /* style */
+    /* untuk memperindah */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f8f8f8;
 }
 
 .flex-container-visi > div {
-    margin: 10px;
+    padding: 10px;
     text-align: center;
     font-size: calc(18/ 16*1rem);
 }
+
+.flex-container-misi {
+    text-align: left;
+    padding: 10px;
+}
+
+.divider {
+    font-size: 30px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .divider::before, .divider::after {
+    flex: 1;
+    content: '';
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 5px 2rem;
+  }
+
+/* style visi misi end */

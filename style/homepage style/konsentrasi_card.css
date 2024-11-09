@@ -28,24 +28,7 @@
 
 /* hover pada card */
 .gambar-konsentrasi-card:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi untuk interaksi hover */
     box-shadow: 7px 7px 0px rgba(255, 255, 255, 0.1); /* Tambahkan bayangan pada card */
-}
-
-/* Efek dan perubahan box-shadow saat hover */
-.zoom:hover {
-    box-shadow: 10px 10px 0px rgba(255, 255, 255, 0.15); /* Perbesar bayangan saat hover */
-    border-color: rgba(255, 255, 255, 0.2); /* Ubah warna border saat hover */
-}
-
-@keyframes zoom-in {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(0.9);
-    }
 }
 
 /* untuk desain card konsentrasi keahlian start */
@@ -60,20 +43,6 @@
 /* style di konsentrasi keahlian end */
 
 /* style gambar konsentrasi keahlian dan cardnya juga start */
-
-.zoom:hover {
-    animation: zoom-in 1s forwards;
-}
-
-@keyframes zoom-in {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(0.9);
-    }
-}
 
 .root-container-konsentrasi {
     display: flex;
