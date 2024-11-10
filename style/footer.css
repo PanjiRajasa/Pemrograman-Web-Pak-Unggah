@@ -1,0 +1,42 @@
+/* root css property start */
+:root {
+    --col-bg-primary-o-90: #000f46e6;
+    --col-bg-secondary: #404b74;
+    --col-bg-tertiary: #EEEEEE;
+    --col-bg-quarter: #6EACDA;
+}
+/* root css property end */
+
+/* style footer */
+
+/* Gaya untuk footer */
+.footer {
+    background-color: var(--col-bg-tertiary);
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0; /* Tambahkan padding vertikal untuk ruang */
+    min-height: 100px; /* Tinggi minimum responsif */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container di dalam footer untuk konten */
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Responsif tambahan untuk layar kecil */
+@media (max-width: 600px) {
+    .footer {
+        padding: 2rem 0;
+    }
+    .footer-container {
+        padding: 0.5rem;
+    }
+}
+
+/* style footer */

@@ -1,3 +1,12 @@
+/* root css property start */
+:root {
+    --col-bg-primary-o-90: #000f46e6;
+    --col-bg-secondary: #404b74;
+    --col-bg-tertiary: #EEEEEE;
+    --col-bg-quarter: #6EACDA;
+}
+/* root css property end */
+
 /* untuk desain card konsentrasi keahlian start */
 
 .konsentrasi-keahlian-title {
@@ -44,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin: 0 auto;
+    margin-bottom: 8rem;
     background-color: var(--col-bg-primary-o-90);
     padding: 16px; /* Tambahkan padding jika diperlukan */
     max-width: 100%; /* Pastikan root container tidak melebihi lebar layar */
@@ -92,5 +101,80 @@
         padding: 4px; /* Kurangi padding */
     }
 }
+
+/* modal style */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Background with opacity */
+}
+
+/* Modal content style */
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 90%; /* Width adjusted to 90% of the screen */
+    max-width: 800px; /* Maximum width of modal */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow: hidden; /* Prevent overflow of content */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Close button style */
+.close {
+    color: var(--col-bg-tertiary);
+    background-color: black;
+    border-radius: 4px;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Gambar di dalam modal (responsif) */
+.modal img {
+    width: 100%; /* Gambar mengikuti lebar modal */
+    height: auto; /* Menjaga rasio gambar */
+    max-height: 80vh; /* Maksimal tinggi gambar 80% dari tinggi layar */
+    object-fit: contain; /* Pastikan gambar tidak terdistorsi */
+}
+
+/* Style gambar konsentrasi keahlian */
+.gambar-konsentrasi-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover pada card */
+.gambar-konsentrasi-card:hover {
+    box-shadow: 7px 7px 0px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+/* modal style */
 
 /* style gambar konsentrasi keahlian dan cardnya juga end */ 

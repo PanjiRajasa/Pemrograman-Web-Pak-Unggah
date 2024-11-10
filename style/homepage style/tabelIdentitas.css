@@ -1,0 +1,156 @@
+/* style tabel identias start */
+
+/* Gaya untuk judul */
+.h2-tabel-identitas-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Menata keseluruhan tampilan tabel */
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddddd;
+}
+
+/* Menambahkan gaya untuk baris header */
+th {
+    text-align: left;
+    background-color: #007acc;
+    color: #ffffff;
+    padding: 12px;
+    font-weight: bold;
+    width: 30%;
+    border: 1px solid #dddddd;
+}
+
+/* Gaya untuk kolom berisi data */
+td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+}
+
+/* Gaya untuk simbol panah dengan warna putih */
+th + th, td + th {
+    width: 5%;
+    text-align: center;
+    color: #ffffff; /* Warna panah putih */
+    font-weight: bold;
+    border: none;
+}
+
+/* Gaya untuk tautan */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Menambahkan border pada tabel internal */
+/* Gaya untuk div pembungkus */
+.div-tabel-identitas {
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Gaya untuk judul */
+.h2-tabel-identitas-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Menata keseluruhan tampilan tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddddd;
+}
+
+/* Menambahkan gaya untuk baris header */
+th {
+    text-align: left;
+    background-color: #007acc;
+    color: #ffffff;
+    padding: 12px;
+    font-weight: bold;
+    width: 30%;
+    border: 1px solid #dddddd;
+}
+
+/* Gaya untuk kolom berisi data */
+td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+}
+
+/* Gaya untuk simbol panah dengan warna putih */
+th + th, td + th {
+    width: 5%;
+    text-align: center;
+    color: #ffffff; /* Warna panah putih */
+    font-weight: bold;
+    border: none;
+}
+
+/* Gaya untuk tautan */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Menambahkan border pada tabel internal */
+table table {
+    width: 100%;
+    margin: 0;
+}
+
+table table td {
+    padding: 6px;
+    border-top: none;
+    border: 1px solid #dddddd;
+}
+
+/* Gaya untuk baris genap */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 600px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+    th {
+        font-size: 16px;
+        padding: 8px;
+    }
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+    th + th, td + th {
+        display: none;
+    }
+}
+/* style tabel identitas */
