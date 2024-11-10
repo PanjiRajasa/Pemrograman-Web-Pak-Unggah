@@ -1,3 +1,19 @@
+/* style berita terbaru start */
+
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
+
+.h2-news-title {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* style berita terbaru end */

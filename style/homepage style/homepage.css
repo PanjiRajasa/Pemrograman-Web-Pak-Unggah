@@ -19,6 +19,7 @@
     background-size: cover; /* Gambar akan menyesuaikan dengan container */
     background-image: linear-gradient(to right, #000f46, #000f46, #000f46, #000f46, #000f46, #1d1f54, #323062, #464271, #726d93, #9f9bb6, #ceccda, #ffffff);
     align-items: center;
+    margin-bottom: 8rem;
 }
 
 /* Gambar Logo */

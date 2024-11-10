@@ -1,8 +1,9 @@
 /* root css property start */
 :root {
     --col-bg-primary-o-90: #000f46e6;
-    --col-bg-secondary: rgb(64 75 116);
+    --col-bg-secondary: #404b74;
     --col-bg-tertiary: #EEEEEE;
+    --col-bg-quarter: #6EACDA;
 }
 /* root css property end */
 

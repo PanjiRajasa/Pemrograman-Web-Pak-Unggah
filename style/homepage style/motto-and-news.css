@@ -1,0 +1,12 @@
+/* style div yang gabungin section motto dan news start */
+.motto-and-news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6EACDA;
+    color: white;
+    padding: 20px;
+    margin-bottom: 8rem;
+}
+/* style div yang gabungin section motto dan news end */
