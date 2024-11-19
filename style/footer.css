@@ -11,7 +11,7 @@
 
 /* Gaya untuk footer */
 .footer {
-    background-color: var(--col-bg-tertiary);
+    background-color: #E0E1E9;
     text-align: center;
     width: 100%;
     padding: 1rem 0; /* Tambahkan padding vertikal untuk ruang */

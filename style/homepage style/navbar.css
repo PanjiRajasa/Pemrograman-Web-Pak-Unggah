@@ -2,31 +2,34 @@
 
 /* untuk navbar-container */
 .navbar-container {
-    background-color: #EEEEEE;
-    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-end; /* Mengatur logo di ujung kanan */
+    background-color: #E0E1E9;
 }
 
 /* for navbar-container */
 .navbar-container a {
-    text-align: center;
     color: black;
     text-decoration: none;
-
+    flex-wrap: wrap;
     padding: 12px;
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.navbar-container a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-
 /* Change the background color on mouse-over */
 .navbar-container a:hover {
     background-color: #ddd;
+    text-decoration: none;
+}
+
+.logo-img:hover {
+    background-color: transparent; /* Mengatur background color menjadi transparan */
+}
+
+a.logoNav:hover {
+    background-color: transparent !important;
 }
 
 /* Style the active/current link*/
@@ -36,20 +39,30 @@
 
 /* Float the link section to the right */
 .navbar-content-container {
-    float: right;
+    /* float: right; */ /* Hapus atribut ini */
+    display: flex; /* Menjadikan navbar-content-container sebagai flex container */
+    align-items: center; /* Menyelaraskan item di navbar-content-container ke tengah secara vertikal */
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
+    .navbar-container {
+        flex-direction: column; /* Menata item navbar secara vertikal pada layar kecil */
+    }
+
     .navbar-container a {
-        float: none;
+        /* float: none; */ /* Hapus atribut ini */
         display: block;
         text-align: left;
     }
 
-    .navbar-content-container {
-        float: none;
-    }
 }
+
+@media screen and (max-width: 500px) {
+    .navbar-container {
+      flex-direction: column;
+      justify-content: flex-end; /* Mengatur logo di ujung kanan pada layar kecil */
+    }
+  }
 
 /* navbar end */
