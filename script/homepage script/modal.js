@@ -4,6 +4,7 @@ function showModal(imgUrl) {
     var modal = document.getElementById('myModal');
     var modalImg = document.getElementById('modal-img');
     modal.style.display = "block"; // Menampilkan modal
+    modal.style.zIndex = "100";
     modalImg.src = imgUrl; // Mengubah sumber gambar modal sesuai dengan URL yang diberikan
 }
 

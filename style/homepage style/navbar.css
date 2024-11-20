@@ -1,14 +1,26 @@
 /* navbar start */
 
+/* old navbar */
+
 /* untuk navbar-container */
-.navbar-container {
-    display: flex;
-    justify-content: flex-end; /* Mengatur logo di ujung kanan */
+/* .navbar-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: #E0E1E9;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
+li {
+    display: flex;
+    justify-content: space-between;
+} */
+
 /* for navbar-container */
-.navbar-container a {
+/* .navbar-container a {
     color: black;
     text-decoration: none;
     flex-wrap: wrap;
@@ -16,53 +28,159 @@
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
-}
+} */
 
 /* Change the background color on mouse-over */
-.navbar-container a:hover {
+/* .navbar-container a:hover {
     background-color: #ddd;
     text-decoration: none;
-}
+} */
 
-.logo-img:hover {
-    background-color: transparent; /* Mengatur background color menjadi transparan */
+/* 
+
+*/
+/* .logo-img:hover {
+    background-color: transparent; 
 }
 
 a.logoNav:hover {
     background-color: transparent !important;
 }
 
-/* Style the active/current link*/
 .navbar-container a.active {
     background-color: white;
-}
+} */
 
 /* Float the link section to the right */
-.navbar-content-container {
-    /* float: right; */ /* Hapus atribut ini */
-    display: flex; /* Menjadikan navbar-content-container sebagai flex container */
-    align-items: center; /* Menyelaraskan item di navbar-content-container ke tengah secara vertikal */
-}
+/* .navbar-content-container {
+    display: flex; 
+    align-items: center; 
+} */
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     .navbar-container {
-        flex-direction: column; /* Menata item navbar secara vertikal pada layar kecil */
+        flex-direction: column;
     }
 
     .navbar-container a {
-        /* float: none; */ /* Hapus atribut ini */
+       
         display: block;
         text-align: left;
     }
 
-}
+} */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     .navbar-container {
       flex-direction: column;
-      justify-content: flex-end; /* Mengatur logo di ujung kanan pada layar kecil */
+      justify-content: flex-end; 
     }
   }
+ */
+
+/* new navbar */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    ;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: deepskyblue;
+    z-index: 5;
+}
+
+.logo {
+    margin: 0 0 0 .45em;
+}
+
+.logo a {
+    color: rgb(28, 24, 22);
+}
+
+.logo,
+.navigation {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.logo a,
+.navigation a {
+    text-decoration: none;
+    letter-spacing: .45rem;
+}
+
+.navigation {
+    display: flex;
+    margin-right: 8px;
+}
+
+.navigation a {
+    display: block;
+    padding: 1em;
+    margin: 1em;
+    color: white;
+    border-radius: 4px;
+}
+
+.navigation a:hover {
+    background: #00ace6;
+    text-decoration: none !important;
+}
+
+.navigation a.active {
+    background-color: white;
+    color: black;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+
+    .logo {
+        margin: .25em 0;
+        align-self: left;
+        /* align the logo to the left side of 'flex-container' */
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
 
 /* navbar end */

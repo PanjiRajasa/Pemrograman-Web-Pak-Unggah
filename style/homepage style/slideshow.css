@@ -1,15 +1,11 @@
 /* CSS slideshow  start*/
 
-.section-slideshow {
-    margin: 1rem;
-}
-
 .slideshow-container {
     position: relative;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 8rem;
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
     padding: 16px;
 
     /* style */
